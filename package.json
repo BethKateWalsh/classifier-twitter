@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BethKateWalsh/classifier-twitter/issues"
   },
-  "homepage": "https://github.com/BethKateWalsh/classifier-twitter#readme"
+  "homepage": "https://github.com/BethKateWalsh/classifier-twitter#readme",
+  "dependencies": {
+    "mongoose": "^5.2.7"
+  }
 }
