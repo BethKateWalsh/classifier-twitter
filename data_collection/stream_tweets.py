@@ -42,7 +42,7 @@ class StreamListener(tweepy.StreamListener):
         created = status.created_at
         retweets = status.retweet_count
         bg_color = status.user.profile_background_color
-        print(status.text)
+        print(description)
 
     def on_error(self, status_code):
         if status_code == 420:
