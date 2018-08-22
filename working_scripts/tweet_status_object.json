@@ -1,0 +1,428 @@
+Status(_api=<tweepy.api.API object at 0x10c8a8fd0>,
+_json={
+   'created_at':'Wed Aug 22 18:08:29 +0000 2018',
+   'id':1032328669891461120,
+   'id_str':'1032328669891461120',
+   'text':'@AzureSupport 975ad0af-db3f-44f1-b69f-79f25f92c107',
+   'truncated':False,
+   'entities':{
+      'hashtags':[
+
+      ],
+      'symbols':[
+
+      ],
+      'user_mentions':[
+         {
+            'screen_name':'AzureSupport',
+            'name':'Azure Support',
+            'id':3146766895,
+            'id_str':'3146766895',
+            'indices':[
+               0,
+               13
+            ]
+         }
+      ],
+      'urls':[
+
+      ]
+   },
+   'metadata':{
+      'iso_language_code':'da',
+      'result_type':'recent'
+   },
+   'source':'<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>',
+   'in_reply_to_status_id':1032326977376727041,
+   'in_reply_to_status_id_str':'1032326977376727041',
+   'in_reply_to_user_id':3146766895,
+   'in_reply_to_user_id_str':'3146766895',
+   'in_reply_to_screen_name':'AzureSupport',
+   'user':{
+      'id':80388143,
+      'id_str':'80388143',
+      'name':'Mark Germanos',
+      'screen_name':'markgermanos',
+      'location':'Northern California',
+      'description':'Speaker | Trainer | Author – I help you compute. Providing IT support and solutions since 1992.',
+      'url':'https://t.co/zNowwGIH9L',
+      'entities':{
+         'url':{
+            'urls':[
+               {
+                  'url':'https://t.co/zNowwGIH9L',
+                  'expanded_url':'http://MarkAnthonyGermanos.com',
+                  'display_url':'MarkAnthonyGermanos.com',
+                  'indices':[
+                     0,
+                     23
+                  ]
+               }
+            ]
+         },
+         'description':{
+            'urls':[
+
+            ]
+         }
+      },
+      'protected':False,
+      'followers_count':984,
+      'friends_count':1336,
+      'listed_count':65,
+      'created_at':'Tue Oct 06 19:58:06 +0000 2009',
+      'favourites_count':223,
+      'utc_offset':None,
+      'time_zone':None,
+      'geo_enabled':True,
+      'verified':False,
+      'statuses_count':9579,
+      'lang':'en',
+      'contributors_enabled':False,
+      'is_translator':False,
+      'is_translation_enabled':False,
+      'profile_background_color':'131516',
+      'profile_background_image_url':'http://abs.twimg.com/images/themes/theme14/bg.gif',
+      'profile_background_image_url_https':'https://abs.twimg.com/images/themes/theme14/bg.gif',
+      'profile_background_tile':True,
+      'profile_image_url':'http://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+      'profile_image_url_https':'https://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+      'profile_banner_url':'https://pbs.twimg.com/profile_banners/80388143/1399000742',
+      'profile_link_color':'B82828',
+      'profile_sidebar_border_color':'FFFFFF',
+      'profile_sidebar_fill_color':'EFEFEF',
+      'profile_text_color':'333333',
+      'profile_use_background_image':True,
+      'has_extended_profile':False,
+      'default_profile':False,
+      'default_profile_image':False,
+      'following':False,
+      'follow_request_sent':False,
+      'notifications':False,
+      'translator_type':'none'
+   },
+   'geo':None,
+   'coordinates':None,
+   'place':None,
+   'contributors':None,
+   'is_quote_status':False,
+   'retweet_count':0,
+   'favorite_count':0,
+   'favorited':False,
+   'retweeted':False,
+   'lang':'da'
+},
+created_at=datetime.datetime(2018,
+8,
+22,
+18,
+8,
+29),
+id=1032328669891461120,
+id_str='1032328669891461120',
+text='@AzureSupport 975ad0af-db3f-44f1-b69f-79f25f92c107',
+truncated=False,
+entities={
+   'hashtags':[
+
+   ],
+   'symbols':[
+
+   ],
+   'user_mentions':[
+      {
+         'screen_name':'AzureSupport',
+         'name':'Azure Support',
+         'id':3146766895,
+         'id_str':'3146766895',
+         'indices':[
+            0,
+            13
+         ]
+      }
+   ],
+   'urls':[
+
+   ]
+},
+metadata={
+   'iso_language_code':'da',
+   'result_type':'recent'
+},
+source='Twitter Web Client',
+source_url='http://twitter.com',
+in_reply_to_status_id=1032326977376727041,
+in_reply_to_status_id_str='1032326977376727041',
+in_reply_to_user_id=3146766895,
+in_reply_to_user_id_str='3146766895',
+in_reply_to_screen_name='AzureSupport',
+author=User(_api=<tweepy.api.API object at 0x10c8a8fd0>,
+_json={
+   'id':80388143,
+   'id_str':'80388143',
+   'name':'Mark Germanos',
+   'screen_name':'markgermanos',
+   'location':'Northern California',
+   'description':'Speaker | Trainer | Author – I help you compute. Providing IT support and solutions since 1992.',
+   'url':'https://t.co/zNowwGIH9L',
+   'entities':{
+      'url':{
+         'urls':[
+            {
+               'url':'https://t.co/zNowwGIH9L',
+               'expanded_url':'http://MarkAnthonyGermanos.com',
+               'display_url':'MarkAnthonyGermanos.com',
+               'indices':[
+                  0,
+                  23
+               ]
+            }
+         ]
+      },
+      'description':{
+         'urls':[
+
+         ]
+      }
+   },
+   'protected':False,
+   'followers_count':984,
+   'friends_count':1336,
+   'listed_count':65,
+   'created_at':'Tue Oct 06 19:58:06 +0000 2009',
+   'favourites_count':223,
+   'utc_offset':None,
+   'time_zone':None,
+   'geo_enabled':True,
+   'verified':False,
+   'statuses_count':9579,
+   'lang':'en',
+   'contributors_enabled':False,
+   'is_translator':False,
+   'is_translation_enabled':False,
+   'profile_background_color':'131516',
+   'profile_background_image_url':'http://abs.twimg.com/images/themes/theme14/bg.gif',
+   'profile_background_image_url_https':'https://abs.twimg.com/images/themes/theme14/bg.gif',
+   'profile_background_tile':True,
+   'profile_image_url':'http://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+   'profile_image_url_https':'https://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+   'profile_banner_url':'https://pbs.twimg.com/profile_banners/80388143/1399000742',
+   'profile_link_color':'B82828',
+   'profile_sidebar_border_color':'FFFFFF',
+   'profile_sidebar_fill_color':'EFEFEF',
+   'profile_text_color':'333333',
+   'profile_use_background_image':True,
+   'has_extended_profile':False,
+   'default_profile':False,
+   'default_profile_image':False,
+   'following':False,
+   'follow_request_sent':False,
+   'notifications':False,
+   'translator_type':'none'
+},
+id=80388143,
+id_str='80388143',
+name='Mark Germanos',
+screen_name='markgermanos',
+location='Northern California',
+description='Speaker | Trainer | Author – I help you compute. Providing IT support and solutions since 1992.',
+url='https://t.co/zNowwGIH9L',
+entities={
+   'url':{
+      'urls':[
+         {
+            'url':'https://t.co/zNowwGIH9L',
+            'expanded_url':'http://MarkAnthonyGermanos.com',
+            'display_url':'MarkAnthonyGermanos.com',
+            'indices':[
+               0,
+               23
+            ]
+         }
+      ]
+   },
+   'description':{
+      'urls':[
+
+      ]
+   }
+},
+protected=False,
+followers_count=984,
+friends_count=1336,
+listed_count=65,
+created_at=datetime.datetime(2009,
+10,
+6,
+19,
+58,
+6),
+favourites_count=223,
+utc_offset=None,
+time_zone=None,
+geo_enabled=True,
+verified=False,
+statuses_count=9579,
+lang='en',
+contributors_enabled=False,
+is_translator=False,
+is_translation_enabled=False,
+profile_background_color='131516',
+profile_background_image_url='http://abs.twimg.com/images/themes/theme14/bg.gif',
+profile_background_image_url_https='https://abs.twimg.com/images/themes/theme14/bg.gif',
+profile_background_tile=True,
+profile_image_url='http://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+profile_image_url_https='https://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+profile_banner_url='https://pbs.twimg.com/profile_banners/80388143/1399000742',
+profile_link_color='B82828',
+profile_sidebar_border_color='FFFFFF',
+profile_sidebar_fill_color='EFEFEF',
+profile_text_color='333333',
+profile_use_background_image=True,
+has_extended_profile=False,
+default_profile=False,
+default_profile_image=False,
+following=False,
+follow_request_sent=False,
+notifications=False,
+translator_type='none'),
+user=User(_api=<tweepy.api.API object at 0x10c8a8fd0>,
+_json={
+   'id':80388143,
+   'id_str':'80388143',
+   'name':'Mark Germanos',
+   'screen_name':'markgermanos',
+   'location':'Northern California',
+   'description':'Speaker | Trainer | Author – I help you compute. Providing IT support and solutions since 1992.',
+   'url':'https://t.co/zNowwGIH9L',
+   'entities':{
+      'url':{
+         'urls':[
+            {
+               'url':'https://t.co/zNowwGIH9L',
+               'expanded_url':'http://MarkAnthonyGermanos.com',
+               'display_url':'MarkAnthonyGermanos.com',
+               'indices':[
+                  0,
+                  23
+               ]
+            }
+         ]
+      },
+      'description':{
+         'urls':[
+
+         ]
+      }
+   },
+   'protected':False,
+   'followers_count':984,
+   'friends_count':1336,
+   'listed_count':65,
+   'created_at':'Tue Oct 06 19:58:06 +0000 2009',
+   'favourites_count':223,
+   'utc_offset':None,
+   'time_zone':None,
+   'geo_enabled':True,
+   'verified':False,
+   'statuses_count':9579,
+   'lang':'en',
+   'contributors_enabled':False,
+   'is_translator':False,
+   'is_translation_enabled':False,
+   'profile_background_color':'131516',
+   'profile_background_image_url':'http://abs.twimg.com/images/themes/theme14/bg.gif',
+   'profile_background_image_url_https':'https://abs.twimg.com/images/themes/theme14/bg.gif',
+   'profile_background_tile':True,
+   'profile_image_url':'http://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+   'profile_image_url_https':'https://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+   'profile_banner_url':'https://pbs.twimg.com/profile_banners/80388143/1399000742',
+   'profile_link_color':'B82828',
+   'profile_sidebar_border_color':'FFFFFF',
+   'profile_sidebar_fill_color':'EFEFEF',
+   'profile_text_color':'333333',
+   'profile_use_background_image':True,
+   'has_extended_profile':False,
+   'default_profile':False,
+   'default_profile_image':False,
+   'following':False,
+   'follow_request_sent':False,
+   'notifications':False,
+   'translator_type':'none'
+},
+id=80388143,
+id_str='80388143',
+name='Mark Germanos',
+screen_name='markgermanos',
+location='Northern California',
+description='Speaker | Trainer | Author – I help you compute. Providing IT support and solutions since 1992.',
+url='https://t.co/zNowwGIH9L',
+entities={
+   'url':{
+      'urls':[
+         {
+            'url':'https://t.co/zNowwGIH9L',
+            'expanded_url':'http://MarkAnthonyGermanos.com',
+            'display_url':'MarkAnthonyGermanos.com',
+            'indices':[
+               0,
+               23
+            ]
+         }
+      ]
+   },
+   'description':{
+      'urls':[
+
+      ]
+   }
+},
+protected=False,
+followers_count=984,
+friends_count=1336,
+listed_count=65,
+created_at=datetime.datetime(2009,
+10,
+6,
+19,
+58,
+6),
+favourites_count=223,
+utc_offset=None,
+time_zone=None,
+geo_enabled=True,
+verified=False,
+statuses_count=9579,
+lang='en',
+contributors_enabled=False,
+is_translator=False,
+is_translation_enabled=False,
+profile_background_color='131516',
+profile_background_image_url='http://abs.twimg.com/images/themes/theme14/bg.gif',
+profile_background_image_url_https='https://abs.twimg.com/images/themes/theme14/bg.gif',
+profile_background_tile=True,
+profile_image_url='http://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+profile_image_url_https='https://pbs.twimg.com/profile_images/420813617814966272/F-cTOMFm_normal.png',
+profile_banner_url='https://pbs.twimg.com/profile_banners/80388143/1399000742',
+profile_link_color='B82828',
+profile_sidebar_border_color='FFFFFF',
+profile_sidebar_fill_color='EFEFEF',
+profile_text_color='333333',
+profile_use_background_image=True,
+has_extended_profile=False,
+default_profile=False,
+default_profile_image=False,
+following=False,
+follow_request_sent=False,
+notifications=False,
+translator_type='none'),
+geo=None,
+coordinates=None,
+place=None,
+contributors=None,
+is_quote_status=False,
+retweet_count=0,
+favorite_count=0,
+favorited=False,
+retweeted=False,
+lang='da')
