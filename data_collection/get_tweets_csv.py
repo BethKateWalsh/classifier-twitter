@@ -74,7 +74,3 @@ with open(filename, 'w', newline='', encoding='utf-8') as f:
                 thewriterobject.writerow([id_user, id_str_user, name_user, screen_name_user, description_user, url_user, followers_count_user_user, favourites_count_user, lang_user, id_status, id_str_status, text_status, created_at_status, truncated, in_reply_to_screen_name, retweet_count, favorite_count, retweeted, lang_status])
             except:
                 print ("Write Error: ", new_values)
-
-# Connect to database MongoDB
-
-# Import tweets as json files to DB
