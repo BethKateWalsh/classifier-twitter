@@ -37,10 +37,10 @@ while len(searched_tweets) < max_tweets:
 
 
 # Create variables for each tweet and write to the csv file
-path = './'
+path = './tweets/'
 filename = 'tweet_{date:%Y:%m:%d_%H-%M-%S}.csv'.format( date=datetime.datetime.now() )
 
-with open(filename, 'w', newline='') as f:
+with open(filename, 'w', newline='', encoding='utf-8') as f:
     thewriterobject = csv.writer(f)
 
     # Write headers
@@ -70,8 +70,10 @@ with open(filename, 'w', newline='') as f:
             retweeted = tweet.retweeted
             lang_status = tweet.lang
             # Add 1000 tweets
-            thewriterobject.writerow([id_user, id_str_user, name_user, screen_name_user, description_user, url_user, followers_count_user_user, favourites_count_user, lang_user, id_status, id_str_status, text_status, created_at_status, truncated, in_reply_to_screen_name, retweet_count, favorite_count, retweeted, lang_status])
-
+            try:
+                thewriterobject.writerow([id_user, id_str_user, name_user, screen_name_user, description_user, url_user, followers_count_user_user, favourites_count_user, lang_user, id_status, id_str_status, text_status, created_at_status, truncated, in_reply_to_screen_name, retweet_count, favorite_count, retweeted, lang_status])
+            except:
+                print ("Write Error: ", new_values)
 
 # Connect to database MongoDB
 
