@@ -48,6 +48,18 @@ with open(filename, 'w', newline='', encoding='utf-8') as f:
 
     for tweet in searched_tweets:
         if tweet.user.screen_name != "azuresupport":
+            # Fields from the status object
+            id_tweet = tweet.id
+            id_str_status = tweet.id_str
+            text_status = tweet.text
+            created_at_status = tweet.created_at
+            truncated = tweet.truncated
+            in_reply_to_screen_name = tweet.in_reply_to_screen_name
+            retweet_count = tweet.retweet_count
+            favorite_count = tweet.favorite_count
+            retweeted = tweet.retweeted
+            lang_status = tweet.lang
+            # Fields from the user object
             id_user = tweet.user.id
             id_str_user = tweet.user.id_str
             name_user = tweet.user.name
@@ -58,17 +70,6 @@ with open(filename, 'w', newline='', encoding='utf-8') as f:
             followers_count_user_user = tweet.user.followers_count
             favourites_count_user = tweet.user.favourites_count
             lang_user = tweet.user.lang
-            # Fields from the status object
-            id_status = tweet.id
-            id_str_status = tweet.id_str
-            text_status = tweet.text
-            created_at_status = tweet.created_at
-            truncated = tweet.truncated
-            in_reply_to_screen_name = tweet.in_reply_to_screen_name
-            retweet_count = tweet.retweet_count
-            favorite_count = tweet.favorite_count
-            retweeted = tweet.retweeted
-            lang_status = tweet.lang
             # Add 1000 tweets
             try:
                 thewriterobject.writerow([id_user, id_str_user, name_user, screen_name_user, description_user, url_user, followers_count_user_user, favourites_count_user, lang_user, id_status, id_str_status, text_status, created_at_status, truncated, in_reply_to_screen_name, retweet_count, favorite_count, retweeted, lang_status])
