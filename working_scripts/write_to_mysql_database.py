@@ -13,7 +13,7 @@ try:
     cursorObject = connectionObject.cursor()
 
     # SQL query string
-    sqlQuery = "CREATE TABLE Employee(id int, LastName varchar(32), FirstName varchar(32), DepartmentCode int)"
+    sqlQuery = "CREATE TABLE IF NOT EXISTS raw_tweets(id_tweet int, id_str_status varchar(32), text_status varchar(200), created_at_status varchar(32), truncated varchar(32), in_reply_to_screen_name varchar(32), retweet_count varchar(32), favorite_count varchar(32), retweeted varchar(32), lang_status varchar(32), id_user varchar(32), id_str_user varchar(32), name_user varchar(32), screen_name varchar(32), location_user varchar(32), description_user varchar(32), url_user varchar(32), followers_count_user_user varchar(32), favourites_count_user varchar(32), lang_user varchar(32))"
 
     # Execute the sqlQuery
     cursorObject.execute(sqlQuery)
@@ -24,10 +24,10 @@ try:
     # Execute the sqlQuery
     cursorObject.execute(sqlQuery)
 
-    #Fetch all the rows
-    rows = cursorObject.fetchall()
-    for row in rows:
-        print(row)
+    # Insert row
+    addrowQuery = "INSERT INTO raw_tweets (id_tweet, id_str_status, text_status, created_at_status) VALUES (002, 'so what', 'so what', 'So what');"
+    cursorObject.execute(addrowQuery)
+    connectionObject.commit()
 
 except Exception as e:
     print("Exeception occured:{}".format(e))

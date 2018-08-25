@@ -24,15 +24,10 @@ try:
     # Execute the sqlQuery
     cursorObject.execute(sqlQuery)
 
-    # Fetch all the rows
-    rows = cursorObject.fetchall()
-    for row in rows:
-        print(row)
-
     # Insert row
-    # addrowQuery = "INSERT INTO raw_tweets (id_tweet, id_user, screen_name, DepartmentCode) VALUES (003, 'me', 'beth', 10);"
-    # cursorObject.execute(addrowQuery)
-    # print("Row inserted")
+    addrowQuery = "INSERT INTO raw_tweets (id_tweet, id_str_status, text_status, created_at_status) VALUES (002, 'so what', 'so what', 'So what');"
+    cursorObject.execute(addrowQuery)
+    connectionObject.commit()
 
 except Exception as e:
     print("Exeception occured:{}".format(e))
