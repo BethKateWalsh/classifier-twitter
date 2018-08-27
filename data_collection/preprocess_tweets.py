@@ -35,16 +35,18 @@ try:
         # Remove mentions, hashtags and special characters :)
         # text_tweet = ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)|(RT)"," ",text_tweet).split(" "))
 
-        # Case folding
-        text_tweet = text_tweet.casefold()
-
         # Tokenizer
 
         # Normalisation
 
-        # Stem words
+        # Case folding
+        text_tweet = text_tweet.casefold()
 
-        # Train classifiers
+        # Clean numbers
+
+        # Stopword removal
+
+        # Stemming
 
         # Add tweet text and id to table
         addrowQuery = 'INSERT INTO processed_tweets (id_tweet, text_tweet) VALUES (%s, %s);'
