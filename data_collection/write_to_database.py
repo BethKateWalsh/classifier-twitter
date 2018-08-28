@@ -57,7 +57,7 @@ try:
 
     # Add a row for each tweet
     for tweet in searched_tweets:
-        if tweet.user.screen_name != "azuresupport":
+        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en"):
             # Assign values to variables
             id_tweet = tweet.id
             text_tweet = tweet.text
