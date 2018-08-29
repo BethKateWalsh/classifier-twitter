@@ -50,7 +50,7 @@ try:
     cursorObject = connectionObject.cursor()
 
     # SQL query string
-    sqlQuery = "CREATE TABLE IF NOT EXISTS raw_tweets(id_tweet varchar(200), text_tweet text, created_at_status varchar(20), truncated tinyint, retweet_count int, favorite_count int, retweeted tinyint, lang_status varchar(32), id_user varchar(32), id_str_user varchar(32), name_user text, screen_name_user varchar(32), location_user text, description_user text, url_user varchar(100), followers_count_user int, favourites_count_user int, lang_user varchar(32))"
+    sqlQuery = "CREATE TABLE IF NOT EXISTS raw_tweets (id_tweet varchar(200), text_tweet text, created_at_status varchar(20), truncated tinyint, retweet_count int, favorite_count int, retweeted tinyint, lang_status varchar(32), id_user varchar(32), id_str_user varchar(32), name_user text, screen_name_user varchar(32), location_user text, description_user text, url_user varchar(100), followers_count_user int, favourites_count_user int, lang_user varchar(32))"
 
     # Execute the sqlQuery
     cursorObject.execute(sqlQuery)
