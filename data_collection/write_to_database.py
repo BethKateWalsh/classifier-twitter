@@ -33,7 +33,7 @@ max_tweets = 1000
 while len(searched_tweets) < max_tweets:
     count = max_tweets - len(searched_tweets)
     try:
-        new_tweets = api.search(q=searchQuery, count=100, max_id=str(last_id - 1))
+        new_tweets = api.search(q=searchQuery, tweet_mode='extended', count=100, max_id=str(last_id - 1))
         if not new_tweets:
             break
         searched_tweets.extend(new_tweets)
@@ -57,10 +57,10 @@ try:
 
     # Add a row for each tweet
     for tweet in searched_tweets:
-        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en"):
+        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en" and tweet.full_text.find("RT") != True):
             # Assign values to variables
             id_tweet = tweet.id
-            text_tweet = tweet.text
+            text_tweet = tweet.full_text
             created_at_status = tweet.created_at
             truncated = tweet.truncated
             retweet_count = tweet.retweet_count
