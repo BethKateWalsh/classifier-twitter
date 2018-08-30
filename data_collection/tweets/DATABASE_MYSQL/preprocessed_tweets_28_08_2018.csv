@@ -1,0 +1,919 @@
+id_tweet,text_tweet,main_category
+1031468672378785793,"is there any reason in particular that my msdn subscription doesn t allow me to create any compute resources in australia the closest i can get is us west",2
+1031468984871211008,"hi team my log analytics workspace don t work no access no data nothing even blade of la on portal is not loading eu west ticket created global problem",2
+1031471000364318721,"dm ed thanks",0
+1031471422927978496,"creating storage account in west europe fails with the request cannot be interpreted as valid json nothing in status dashboard",2
+1031471892492967937,"i have the same issue multiple loganalytics workspaces not responding in the portal",2
+1031472518517932032,"thanks though i have another question about this if i can dm you",3
+1031472846894194688,"same for us using la in west europe dashboard charts not loading also oms portal seems to be stuck in some kind of redirect loop",2
+1031473397321138176,"hey i m having trouble deploying to an app service can i dm you details please",3
+1031473411816611840,"just update the payment information of my subscription but it is not reactivated i want my websites to be up again",2
+1031475222300577793,"i get an error creating a storage account the request cannot be interpreted as valid json sku name standard ragrs kind storage location westeurope properties supportshttpstrafficonly false ishnsenabled false any advice",2
+1031475663235104768,"same issue here",3
+1031475901496811523,"we re getting this in west europe too so its not subscription specific",3
+1031483220884373504,"i got the same view from both chrome and edge it appears to have fixed itself now though",3
+1031483885014720512,"having this issue as well creating storage account and managed disk via portal amp terraform",3
+1031491918818156544,"it s working now",3
+1031496147888693248,ping,3
+1031502488921358336,"problems with azure storage in west europe all deployments failing on all subcriptions accounts works in north europe both cli powershell amp portal fails with the request cannot be interpreted as valid json",2
+1031502946197037057,"i m currently getting error internal error in disk manager when attempting to provision a vm and the same error when attempting to start a vm in a completely separate subscription both westeurope",2
+1031503428323868672,"thanks for your services we are observing issues while scaling up deleting and creating aks clusters we are observing similiar issues while creating vms any thoughts looking forward to your comment",2
+1031504763014340609,"this occurs every time i try to create a storage account via the portal any ideas",2
+1031508462541447168,"aztechhelp can t make storage accounts in west europe there is an status alert is there an eta on resolution thank you",2
+1031508829530468354,"engineers are aware of an issue affecting resources in west europe please refer to for updates",3
+1031512988623294464,"engineers are aware of an issue affecting resources in west europe please refer to for updates",3
+1031513373643431938,"azcommunity hello guys i m having issue choosing the pricing tier for cognitive service face api is there anyone having the same issue what can i do",2
+1031515489598623745,thanks,0
+1031515997260443648,"engineers are aware of an issue affecting resources in west europe please refer to for updates",3
+1031522758352457729,"atm we are getting the gateway did not receive a response from microsoft web within the specified time period code gatewaytimeout in north europe could that be related",2
+1031523671783833600,"aztechhelp our website is not loading",2
+1031526530596388865,"sure you should have received the message right now thanks for replying so fast",0
+1031528076566507525,"hey engineers are aware of an issue affecting resources in west europe please refer to http",3
+1031529204339359746,"regarding update your legacy keys for cloud services web roles to enhance security how can i confirm that i have successfully updated",3
+1031530515336257536,"have they run out of resources in the dc again justsaying",2
+1031532261336903680,"yep check",3
+1031532354735624193,"i m also having this issue wasted hours lolol",3
+1031535520537616384,"aztechhelp i have noticed in monitoring that ping request monitoring now no longer supports tls1 2 only services i get could not create ssl tls secure channel as a result on such services",2
+1031535659125800960,"aztechhelp same is true for invoke webrequest but can be fixed by net servicepointmanager ecurityprotocol net securityprotocoltype tls12",3
+1031535892677238784,"does anyone know how to get the security centre to rescan for recommendations i have fixed some and want them to go from the list azure azuresecurity",3
+1031537665995427840,"aztechhelp i m trying to deploy a linux vm but all my efforts end in a failure with a code diskserviceinternalerror with message internal error in disk manager any suggestions",2
+1031539300263964673,"no unfortunately that site does not tell me how to rescan my systems or when azure might rescan them for me",2
+1031540844996775944,"do you have a tutorial like this that includes actual task code tanomy is already tricky in batch as you d talk of jobs tasks etc i think the learning curve could be flattened with simple start to end wizard flow get feets wet with how it all works go into details later",2
+1031543477107089408,"aztechhelp i m trying to deploy a linux vm but all my efforts end in a failure with a code diskservice",2
+1031543525962403840,"somehting wrong with sspr page",3
+1031544807884242944,done,2
+1031544874871472128,"hello that site does not say how i can rescan or when azure rescans the subscription of recomendations i know how to set them i just want to see my progress to make sure they are going",2
+1031544967460737025,"yeah i understand i would still encourage to think about how to make getting started with batch a little bit more accessible not everybody will go through all the theory first to just give it a shot would be highly welcomed lower the entry barrier and be fun to us for all",1
+1031547542306267136,"sure will do",3
+1031549723826634753,"don t think you can trigger a rescan since june asc has used the oms agent security center typically scans for new data every hour the latency values above are worst case scenario where there is no recent scan or scan failed",3
+1031554162922807298,"aztechhelp i m getting a sorry unauthorized action on when clicking on manage in a verizon cdn profile blade in the portal any idea",2
+1031558042821611522,"aztechhelp how do you reset a pre shared key on a classic vpn gateway",3
+1031558235222892546,"no changes for months i know that i have been able to access this portal before but i can t remember when was the last time",3
+1031560060084858880,"azhelp where can i find non profit pricing for ad p1 amp p2 can our azure credits be used for those purchases",3
+1031560906826756096,"is azureinformationprotection also working for disabling downloads of pdf not finding any answers in blogs does it work with guests in teams curious",2
+1031561593992110080,"learn about linux backup amp restores on the azure academy",3
+1031569292331032576,"having difficult time figuring out how to get my rds user cals working with azure ad",3
+1031570262402260992,"first i am wondering why i even have to do azure ad just to get rds user cals to work on my azure windows server",2
+1031570418057072641,"and if azure ad is required how do i get my azure ws to know it exists",3
+1031572168889520128,"thanks chris i think your right i will give it hours to see what happens",0
+1031575885994962944,"so i cannot simply use the rds users cals on one machine a domain meaning azure ad is required",2
+1031576841805545480,"aztechhelp hi there i wanted to check if my sql sever database is currently being back up automatically on azure and how many backups this has i am on a basic plan thank you",3
+1031581738072330246,"hi how do i know which power bi data sets are using memory from my power bi embedded resource as far as i can tell through the pbi online no dataset is being refreshed but all of my memory is being used",3
+1031583497528332290,"thanks you da best",0
+1031589159872282624,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live we re here for you thanks to for helping to set this up",3
+1031589426214785024,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031590467819819008,"i have but my concern is with my azure memory usage in the screenshot below it shows i am using more than gb of power bi embedded memory when no data sets are being refreshed is there a way to breakdown this memory usage to understand whats using it and how much",3
+1031593065860026368,"we only have one server can this server also act as the licensing server i was told i had to have azure ad even though i only have one server i do not understand",2
+1031594604955660288,"hi bit complicated for me could you check on my account kindly",0
+1031595351235600390,"we are maybe we should do per device",3
+1031595829113643008,"aztechhelp wanted to use this to create local backups of my azure sql database says a duplicate db is made during each ert i wondered if this would incur additional cost to my azure subscription and if so roughly how much thanks",3
+1031597758292127745,"so i should try to change the per user license to a per device i am on the phone with business center so maybe they can get that done",3
+1031599387867275265,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031602276262203392,"yep we do not need ad so sounds like the correct fit thx for your help",0
+1031603982681157632,"does anyone know how to get the security centre to rescan for recommendations i have fixed some and want them to",3
+1031604369219825664,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031607853449129985,"thank you",0
+1031608066251218944,"isn t there some standard visio templates of a highly available network web bus db that we can use as a jump start to proposals iaas one for paas would also be awesome goodidea",2
+1031609338903912449,"i have posted this question on august and today is august but still can t get any answer can i ask why",2
+1031611511289139207,"if you guys think i am free user so i m not if you need i can do dm to you please help do the needful",3
+1031611888356847616,"we can see your point hopefully it s in the pipeline in the meantime feel free to reach out if you ha",3
+1031612675329912832,"for sure",3
+1031613002427101188,"any update here i tested to sqlpackage command over the weekend using the highest possible setting for an sql database and a f32s v2 vm and still got time out errors also tried moving it to azure storage using the portal and it still took hrs",2
+1031613421622423559,"azhelp do you have guidance on migrating a basic wordpress site from on prem to azure not sure what my options are",3
+1031619795894951937,"has public peering been already deprecated eressroute",3
+1031625124934348800,"i tried to create one and it failed with an error invalid bgp peering type public peering has been deprecated",2
+1031627221306429442,"setting up cisco asa vpn to azure what does custom azurevpn policies withnarrowtrafficselectors mean i searched there is no kb for this",3
+1031630702155112449,"aztechhelp why with my mpn suscription i can not create a qna maker service the management pricing tier is unavailable",3
+1031630890290429952,thanks,0
+1031638252711829505,"hello i am trying to create an ert of an existing database in azure however i am running into the datasyncencryptionkey is not supported in ms azure sql database v12 forums say support has to clean up the datasync how do i have someone do that",2
+1031642400224096264,"any ideas on which is the powershell command to create an azure user s last sign in report",3
+1031643589246427136,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031644011944202246,"i need immediate billing support i have open tickets all of which have been resolved just to find myself in the same issues that i had resolved",2
+1031646251215974400,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031647232636985344,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031649583724736514,"sure i ll wait",3
+1031650452616568832,"aztechhelp i set up trial backups and put my credit card with them i guess when the trial ended it did not automatically go to my credit card like i thought it was suppose to and deleted all my backups i need some data off one of those backups how do i get it",2
+1031651931926740992,"azcommunity nothing is running but of the memory is used why",3
+1031653407227035649,"sent thank you",0
+1031653720516440064,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031654503865561089,"here is a call for microsoft azure to ban neo nazi hate website gab for their constant threats",2
+1031656038846656512,"i restarted virtual machine nothing running but low memory warning chris com account what gives",3
+1031657484967141381,"running vm as test account more memory than my office pc yet with nothing opened there is low memory msmpeng exe is in error message",2
+1031661605975674882,"you guys really need to pay close attention if you go to the first questions it clearly says powershell commands thank you for trying",2
+1031661734195601414,"why would a brand new windows server instance come up with a black screen and cmd window when i log in for the first time",2
+1031664113469083648,"i can see it say something like selection manager and then it just goes black",2
+1031665477448282113,"also i created this new vm because our old vm has gotten corrupted and ruined can i detach the drive from the old vm in attached to this new vm as soon as i get it running",1
+1031672362997956608,"nope that s the only error",3
+1031674566488346624,"a port as a software ported to those platforms mac and or linux",3
+1031675684454838274,"running the cosmosdb emulator on mac or linux",3
+1031683463236251650,"hi i saw that post however the scripts have a warning on them that is off putting",2
+1031691851701604352,"you can run the cleanup script connected to the database copy without any problem this is one of the good use cases warning is to avoid other kinds of usages",3
+1031699778332024832,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031699836347789312,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",3
+1031702886466691074,"hey my virtual machine all of a sudden crashed and now it seems no matter what i do i cannot get the machine to load up again and work what am i doing wrong aztechhelp",2
+1031721364774764544,"hi where can i complain about the azure support i m getting i ve raised a performance issue days ago raised to sev a but only get max email per day asking multiple times for the same logs just a waste of time",0
+1031723675211497475,"yes i cleared my cache still having the issue",2
+1031724299969802243,"when i click in apis it supposed to show this now it is showing not found",2
+1031727364017860608,done,3
+1031728362690109440,"how about you make this text oh i dunno highlightable so i can copy the damn thing out of this box and into google",1
+1031748343955906560,"azhelp how can one recover a username and password on a virtual machine tried resting admin password and after running minutes it failed",3
+1031750538952466434,"azhelp i want to create a virtual machine using free services in japan region but i cannot find japan in the region list is there a way to choose japan region",1
+1031757163998277633,"thanks for replying the virtual machine i m trying to deploy is a windows virtual machine with standard b1s instance so i clicked create button in home gt free services gt windows virtual machine",1
+1031783625811849216,"aztechhelp an existing connection was forcibly closed by the remote host this happen recently",2
+1031785286659923969,"aztechhelp can t restore data from azure backup got error that credential are not valid",2
+1031795473861042182,"testing of a free tier of iot hub i m getting this morning are there known issues",2
+1031796365754392576,"aztechhelp how to embed powerbi report on mvc apps",3
+1031796648261955589,sent,3
+1031798616082378753,"ok thanks am checking on it",0
+1031799334763995137,"hi do you have any update on this",3
+1031799717812822016,"i been followed that example but it seem not working error message microsoft identitymodel clients activedirectory adalserviceexception aadsts70002 the request body must contain the following parameter client secret or client assertion any advices",2
+1031803780835278848,"in different subscriptions i see that env variable website hostname is not changing it s value while switching from staging to production slot on production slot it have hostname which points to staging is it eected nowadays",2
+1031809640214999041,"do you have the procedure to migrate data from an on premise nas share to a nas share in cloud is asr is supported for nas migration would azure file sync be a better tool or azcopy",2
+1031810619920531456,"azcommunity in your pricing calculator for virtual machines i see value of cores named cores s did you mean core s",1
+1031813576858775552,"yes some of slot settings are marked as sticky",3
+1031814126404870144,"can you let team validate this request",3
+1031815656310751232,"yes but the issue is related to azure portal using old api version number",2
+1031815720030625792,"but according to this rd party doc website hostname variable is sticky to the slot so i would eect that it will be left on slot while swapping and will not be transferred to my production slot",2
+1031819665113329664,"hi in our arm templates we use api version 02 01 azure portal uses 03 01",2
+1031821753046233088,"portal s website and my own azure web app are unreachable with error dns probe finished nmain tried different connections also can you please investigate",2
+1031825894724300800,"while i observe contradictory behavior website hostname is switched with a slot thus could not be used to identify if we are running at staging or production slot",2
+1031826587321335808,"i used a public dns and seem to be working now thanks",0
+1031827164663083008,"are you sure this is azure resource manager related it seems to be related to azure portal",3
+1031827621674401792,"azure iot europe west seems to have major issues unable to manage devices using c nuget pkg",2
+1031829024614637568,"azhelp i ve created a b2c tenant ad for a test and now want to delete it the check states that are app registrations present but i have no apps registered the only apps are the built in microsoft ones can you provide a pointer where to look for the solution",3
+1031830269127544833,"is there a problem with some azure portals one customer one is working fine but in mine i can t click any resources i click on a resource in a group and nothing happens tried browsers with same result",2
+1031834389645275136,"yes i m using this but can t find for sure where the azure storage spec is or how to run it",3
+1031836149638152192,"aztechhelp it seems that our cloud service cannot be reached from russia and china is there an issue known about this can i do something from my side to fix this issue",2
+1031836662890983425,"thanks i ve found which seems to be what i need just wasn t documented very well",2
+1031840399772606464,"here it is",3
+1031840687359225856,"hi simon have you reached out to our friends they may have some answers for you thanks",3
+1031840690894827520,"aztechhelp hello does azure database are automatically backup",3
+1031841936108269568,"i mean i used the azure database sql server i created an azure database and what am is does my database are automatically backup by azure or i have to do by my self",3
+1031843415993012224,"thanks i can see the app but i in trying to remove tenant i deleted the b2c extension app i think i need to restore this but the restore app webpage link logging in via graph elorer method does not work i can t connect is there another way",NULL
+1031843603474259968,"hi martin our friends may have some answers for you thanks",NULL
+1031843831291899904,thank,NULL
+1031858033016676353,"guys i fail to understand that my requests get throttled even when i m not way near the ru threshold also when i bump up the rus x there is no change and the metrics are still skewed",NULL
+1031868860469850112,"hey is there a limit to how many vms can be created on the free tier",NULL
+1031870379671748608,"could you please connect with us at askcosmosdb com and please share your subscription id and database account id thanks",NULL
+1031870590129504256,thanks,NULL
+1031878080330125312,"hi jamie our friends may be able to help thanks",NULL
+1031879977078321152,"any ideas what to do failed to link vsts organization lt uname gt to azure subscription lt guid gt more details failed to register resource provider with the namespace microsoft visualstudio error timed out registering microsoft visualstudio resource provider",NULL
+1031884923995598848,"aztechhelp azure alerts are not sending e mail notification is there any log i can check why please help",NULL
+1031904966980464641,"i m not white but how can you allow such hateful people to work from your office how can anyone talk about killing people for their skin color this is extreme racism",NULL
+1031907466664189952,"aztechhelp hello i want to host my static website html css js so only frontend execution someone told me to use the storagev2 is it the best solution how do i deploy my website with linux cli",NULL
+1031908747122098177,"azhelp need help with my account",NULL
+1031912853584924672,"under monitor alerts i have created alert to notify on admin changes on nsg however it is not sending notification emails",NULL
+1031917166659084289,"i have follow wizard in azure portal under monitor alerts i have create alert rule and action group",NULL
+1031917629475364865,"it is a brand new one",NULL
+1031917992089669632,"i do not believe that i have overlooked anything unless there are some additional setting",NULL
+1031919214586671104,"hi jamie our friends may be able to help thanks",NULL
+1031919239236608000,"we d be happy to take a look could you direct message us with more information about your use case",NULL
+1031921446442938368,"hi i can t create a qna service right now because of the following error do you have any hint of what it might be",NULL
+1031921515233792002,"aztechhelp why would i not see zrs as a replication option for a new storage account i only see the other options lrs grs amp ra grs cheers guys",NULL
+1031924982094483456,"i tried to change all the locations search location website location and insights location and i still can t select a pricing option is there another setting somewhere for the deploy location",NULL
+1031929843913351168,"azhelpmeone has hijacked my azure account and locked my cto and myself out what can i do",NULL
+1031930355350102016,"azhelp i need help someone forcifully acquired admin privileges to my azure account and locked us out what can i do",NULL
+1031933156952367105,"when using a web app from a docker container do you guys check if latest or without a tag is updated periodically",NULL
+1031936310590590981,"days to go until the appserviceama twitter event this is a great opportunity to ask the product group direct questions live",NULL
+1031943489238560768,"azhelp is it possible to use a custom dns name with servicebus instead of servicebus windows net",NULL
+1031946382771400704,"i will recreate alert tomorrow for a first look i do not think i have missed anything is there any log i can check for details",NULL
+1031952884307582976,"hi i would like to know if there will be a time when elements like classic virtual machines should be migrated to virtual machines of type resource manager",NULL
+1031953809252208640,"thanks to we are now able to sync our customers db to azure sql all million records only took days mr s f and mr p h were true champions",NULL
+1031954301852106752,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1031956101963702272,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1031958772573327360,"such a cool event is setting up i love it that our customers have open lines of communication to the product teams send us your questions",NULL
+1031959031294963713,"having an issue creating a vpn tunnel between azure and a cisco asa azure documentation has been no help",NULL
+1031961107345358848,"such a cool event is setting up i love it that our customers have open lines of communication to the product tea",NULL
+1031967408901087233,"what s in store for python on azure appservice in the future appserviceama",NULL
+1031969399752871936,"such a cool event is setting up i love it that our customers have open lines of communication to the product tea",NULL
+1031973758607618048,"hey why did my subscription all of sudden get disabled i had plenty of credits left very frustrating",NULL
+1031981259700850688,done,NULL
+1031984619912978432,"i have received zero messages nothing in email no alerts nothing i tried to access my azure sql server this morning and it said disabed when it was available a few hours earlier",NULL
+1031985260219777024,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1031986044613406720,"is the templates resource an abandoned project seems like it s been in preview for quite a while",NULL
+1031988048614092802,"on the left pane choose all services search for templates",NULL
+1031991294384656384,"any thoughts on when aks might be available in the south central us region",NULL
+1031994858486022144,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032003407895318528,"when trying to upload the sql database is giving this error photo",NULL
+1032006107244445696,"no as i indicated i had to figure out a workaround to get our product up again",NULL
+1032006527882674176,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032006648863354880,"unable to login to the portal appears to be a failure to acquire authorization token from access code is this a system level issue",NULL
+1032019956982894592,"thanks so if i remove the spending limit from my account right now and pay via debit card am i paying on demand or at the end of the billing period",NULL
+1032020468964966400,"such a cool event is setting up i love it that our customers have open lines of communication to the product tea",NULL
+1032021805580476416,thanks,NULL
+1032022051542843392,"aztechhelp when i make a new webapp i have an error can you help me gt az webapp up in tariat test creating app tariat test operation failed with status bad request details client error bad request for url",NULL
+1032028891999817728,"such a cool event is setting up i love it that our customers have open lines of communication to the product tea",NULL
+1032031894463029249,"hi been hacking for a week looking for a powershell script runbook to stop start vm s on a schedule is there a clean easy example i could use with automation account thanks in advance",NULL
+1032033812916649984,"i am not getting any traction from can you please assist",NULL
+1032037352871477253,"i see a4 v2 under the low priority vms in the pricing calculator but when i go to change the size of my vm i can t find it where would i go to find it in the portal",NULL
+1032040298300538881,"hi were you able to ert the database",NULL
+1032041926420299777,"our database individual was busy today he is attempting it tomorrow morning thank you for the follow up",NULL
+1032043455936118785,"tuesazure why tfs to vsts migration is a low risk approach to starting devops",NULL
+1032050362025308160,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032053839073968128,"i m excited about this azureappserviceama can you tell me how do i autoscale my app and how does it affect billing i think there is a change in pricing compared to what you see on the azure scale up wt you see on compared to the pricing calculator",NULL
+1032053946682986497,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032054065902100480,"it would be awesome if you guys added the ability to select multiple vms and start stop them all at once as opposed to having to click each one and navigate to a different screen to stop each of them individually thanks",NULL
+1032055226042220547,"azurehowtotuesday learn how to deploy continuous and triggered webjobs using the azure portal",NULL
+1032055298293358592,"join gaurav malhotra and as they discuss how you can use repositories with azure datafactory on this",NULL
+1032055378408689664,"azurehowtotuesday learn how to review quotas amp metrics for your app service plan and see how you can easily set up alert",NULL
+1032056045554696192,"azhelp i want to move my partner subscriptions to a new azure tenant the only thing running on the old tenant is a classic vm what would be the best easiest way to do this",NULL
+1032059392932294656,"lol typical customer care response ha haaaa",NULL
+1032070515597430786,"thanks sent the details over",NULL
+1032071389862354944,"will do",NULL
+1032074891707772930,"your support is terrible pm me asap to get actual help i was told to submit a support ticket but the system directs me back to twitter azure is complete trash no wonder people go to aws",NULL
+1032075564100636673,"yes every time i wanted to access my e mail i am asked to reset my password this was after setting up a two step verification for it why am i constantly being asked to reset my password each time please take care of this issue for me thank you",NULL
+1032080634653683712,"team i need your support on my azure billing could you please help me on this",NULL
+1032080968759300099,"please check your dm i will message u on dm",NULL
+1032087271502241792,"can you try closing the browser or clearing all cache",NULL
+1032092577036726273,"aztechhelp using nuget package cannot recreate a directory after it has been created",NULL
+1032094724625182720,"even after it has been deleted",NULL
+1032100660144091136,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032102031383658497,"no completely locked out",NULL
+1032102330177470465,"i am the owner of the account but my cto has admin privileges they forcifully obtained his password and proceeding to lock me out i don t understand how an owner can be locked out",NULL
+1032103199799369729,"is there a way to monitor mount points using the linux diagnostic agent installed on the linux vms",NULL
+1032145186510569473,"i ve submitted a support request thank you",NULL
+1032158897597952000,"aztechhelp i m running a lemp in a centos7 vm the iops of that os disk is only i didn t see any option that can increase the iops so how could i improve that performance",NULL
+1032160810838175744,"he is there any way to look into the docs of different api versions only supports the latest",NULL
+1032168968079851521,"azhelp hello team can we embed power bi on webapps api",NULL
+1032169293260251136,"i did received alerts with h delay looks like setup was correct on my end i will reconfigure alerts as agreed yesterday and check it again",NULL
+1032171375329505281,"aztechhelp hi all i think we have a problem due to the last update regresion during last week when i try to deploy bot on new azure webapp it s doesn t work but when i use old azure webapp the same bot work fine sincerely sanpas",NULL
+1032175382047457280,"aztechhelp tried to raise a ticket but cannot any reason why our credits on a b2 should instantaneously go to zero after months of being maxed out",NULL
+1032177910835281920,"it is not working h delay with sending emails is below eectations for any alerting system",NULL
+1032181939044864000,"the reset pw functionality in b2c azure portal doesn t seem to work known issue is there a workaround available can you help",NULL
+1032186429890277377,"unable to post anything body text cannot contain images or links until we are able to verify your account even thou there are no images or links in message",NULL
+1032186727375548417,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032187229794390017,"we have a b2c tenant and want to reset the password of a local b2c user the issue was described yrs ago for the old azure portal",NULL
+1032187981669457920,"when using the iot hub there is a question about schedule jobs what does complete mean",NULL
+1032188089559437312,"for example use the desired properties to install the app to the device when the app is installed the job is completed or the job is completed when the device receives the desired properties which one is correct",NULL
+1032195399858225152,"excellent thank you for escalating it for me",NULL
+1032200934204604416,"thanks you can find the post on",NULL
+1032203312689504256,"is this known by you",NULL
+1032206577204387841,"sooo that s a yes then",NULL
+1032208754090168321,"thank you hope you get it fixed fast",NULL
+1032208864127664128,"i have app services all sharing a d1 app service plan the azure portal won t let me assign custom domain names to the th one but it does the others any suggestions azure i ve not read of any limit on the number of app services an app service plan can have",NULL
+1032208989994577920,"thanks the ad is managed by another company consultant for our customer they tell me those steps are obsolete and app roles cannot be sent down to apps in samlresponse because they re restricted claims pointing me at as proof",NULL
+1032209410385489920,"my question is can standard saml be used for role based authorizations sending app roles as a saml claim or does it require calls to the microsoft graph api to retrieve the roles",NULL
+1032209786778083328,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032210955894226945,"they do indeed but i m looking to connect to table storage not blob i have found this though so maybe that will work",NULL
+1032211882898333696,"looks like i just needed to sign out of the portal and back in the option is appearing now thanks anyway",NULL
+1032213689112309760,"thank you for your reply i just referred to the documentation in the link you said but there is no detailed description of the status and devicejobstatistics what is the basis for the judgment of device job succeed",NULL
+1032214351074222080,"new functions service is failing over https was ok a while ago but suddenly getting failed connections to the domain over https http is ok",NULL
+1032216569621823488,"3 3 however it looks like confirmation was successful as user got a welcome email so the error message on the portal was likely bogus is there any issue open on this if not where can i file one azureapimanagement",NULL
+1032218829387120640,"are there any known issues with ms account federation oauth impossible to logon to azure portal with private ms account since hours",NULL
+1032222037237006336,"yes virtually everything",NULL
+1032222054391656448,"oooh sorry hadn t quite clocked what you after yeah common integration scenarios are for blob file or queue table gets overlooked had a skim through that link and it sounds promising you re having to use python libraries for most things anyway one more won t hurt",NULL
+1032222211497705472,"can t say i ve tried it myself though lemme know if you don t get anywhere might have a quick play later in the week",NULL
+1032227416931004416,"aztechhelp we can t stop and restart azure it is trying to suspend but the machine hangs",NULL
+1032233461610934272,"my vmcan not connect on port port from a subnet port it connects if i use dfrnt subnet from my org i can connect port as well fw trfc age out any clue where should i check",NULL
+1032235788300365826,"working now without any update on my side strange but good thanks for your help",NULL
+1032238120950018049,"tuesazure why tfs to vsts migration is a low risk approach to starting devops",NULL
+1032239004333338624,"are there any current issues with vsts my builds aren t running they just sit there saying waiting for available machine i m running a paid for hosted agent",NULL
+1032240076883996672,"my question is can standard saml be used for role based authorizations sending app roles as a saml cl",NULL
+1032240708785250304,"sorry about the inconvenience we re working to resolve this now we ll provide updates at as we continue to work to resolve this issue",NULL
+1032240965334052864,"thanks for the update",NULL
+1032244389853241344,"right the options now are email notifications via the left sidebar on the link above and rss we re looking to improve the notifications here soon sorry about the inconvenience",NULL
+1032244683462909953,"azhelp azure maintenance caused our website to go down wanted to get in touch with support but we don t have the correct plan purchased the correct support plan but it doesn t get activated sales don t pick up the phone any help possible",NULL
+1032248103976546304,"hey for web apps any plans on properly giving us a way to black list robot scripts looking for eloitable endpoints example attached get the same every day for admin adminpanel wp admin etc",NULL
+1032248139397427200,"ed is correct",NULL
+1032249604908220416,"appserviceama will app service ever support auto scaling up instead of out",NULL
+1032250131607900163,"thanks in advance",NULL
+1032252208161726465,"see screenshot uneected error so how do i post this on the form",NULL
+1032252995235467264,"had to reopen and post it in pieces here you go",NULL
+1032253581447987203,"aztechhelp hi i have renamed my computer name after joining azure ad but the new name hasn t been updated in azure portal is there any way i can rename it there",NULL
+1032258485751140352,"are builds down my builds are awaiting uneectedly long and not starting",NULL
+1032258658007240705,"hi volodymyr we re currently working to resolve issues with builds in west europe apologies for the inconvenience we ll have updates at as we work to resolve this issue",NULL
+1032260830933463041,"one of our west europe vms is inaccessible and we have downtime is there an issue with the data centre",NULL
+1032264014921977856,"here let me rephrase it appserviceama how do i autoscale my app and how does it affect billing i think there is a change in pricing compared to what you see on azure portal vs wt you see on azure pricing calculator",NULL
+1032269785122463744,"got it thanks ed",NULL
+1032274580507906048,"hey i need to spin up some vms standard dv2 family vcpus for a workshop this afternoon and my limit is set to i need could you help me out please thanks",NULL
+1032275248870313985,"i have but ideally need it now as i ve got hr mins until the workshop starts and need to spin them up before the attendees arrive i promise to sing your praise if you could sort this out",NULL
+1032276124540305409,"have raised it to sev a and will start warming up my vocal cords",NULL
+1032276884497858560,"fantastic service from i raised a ticket about backup policies this morning and ricardo p contacted me this afternoon to talk me through the solution also took the time to show me some other useful features too brilliant",NULL
+1032278421236342784,"ok i might have got ahead of myself and asked for it in central us instead of easy us my bad by kind of had a panic meltdown i ve raised a new ticket for east us",NULL
+1032278945847226373,"workshop preparation madness this is actually what s happening here",NULL
+1032279014373814273,"i wish i could give you a hi 5 right now thank you so much now back to setting up the workshop",NULL
+1032279423049981952,"aztechhelp hi i am pretty sure that i created a f0 qna maker resource in the past deleted it a few weeks ago now i can t create a new one all management pricing tiers are greyed out any idea why thx",NULL
+1032280459764355072,"how to list all the items in sub directories and blobs in a blob",NULL
+1032280719123513345,"t minus hours be sure to catch the appserviceama tomorrow we ll be here with",NULL
+1032281647645786112,"will this list files or blobs in sub directories too",NULL
+1032284806619455488,"is there any new function for that this seems bit old",NULL
+1032286681305673729,"workshop preparation madness this is actually what s happening here",NULL
+1032289551824211970,"appserviceama is starting in half an hour join our engineering team and to get all of your app service questions answered live on twitter",NULL
+1032289647223877633,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032289690710409216,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032290288855863297,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032290333877460992,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032290626191192065,"appserviceama is there or are you working on a way to view a list of dev stage slots from different apps in the portal without having to drill down on each app",NULL
+1032291086025273344,"appserviceama any alternative methods that is no point 2 site or isolated plans to connect to a vnet",NULL
+1032292032658763777,"is there a plan to increase the custom domain limit from appserviceama",NULL
+1032292132596248576,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032293178156769280,"appserviceama why do func apps on consumption plans not have outbound ips can you change the sql paws firewall setting to allow access from azure services by region instead of on off thx for your time",NULL
+1032296113569591297,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032296236076810241,"we are not currently working on such a capability but you can see the list of slots by looking in the resource group that will list everything",NULL
+1032296350610681856,"we are intending on releasing python on app service on linux in the next few months thanks",NULL
+1032296657625333760,"we are live have a question about azure app service join us with and",NULL
+1032296877545349120,"sure you can use hybrid connections that will let you reach application endpoints in any network you can read more on it here",NULL
+1032297174753636353,"we don t this option available yet though you are more than welcome to add this to our uservoice forum as a feature request",NULL
+1032297668771553280,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032298183001497600,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032298198075883520,"we are live have a question about azure app service join us with and",NULL
+1032298502125117440,"function apps on consumption plan can be run in any of the scale unit in a region per demand and availability and hence the list of outbound ip s are going to be dynamically changing dedicated functions is an option if this is absolutely needed",NULL
+1032298653514387457,"this should be a feedback request on sql azure",NULL
+1032298806698696706,"you can autoscale your app based on time or metrics when you do this you add or remove app service plan instances billing is based on cores so if you add instances then you pay for the additional cores to enable autoscale go to the portal for your app and select scale out",NULL
+1032299072701444102,"we are live have a question about azure app service join us with and",NULL
+1032299235151159297,"we are live have a question about azure app service join us with and",NULL
+1032299305187647489,"appserviceama lots of people want this when will we get it",NULL
+1032299306525573120,"appserviceama lots of people want this when will we get it",NULL
+1032299406979153920,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032299593269174272,"we are live have a question about azure app service join us with and",NULL
+1032299842561888258,"thx for the response i had to get the canada central ip ranges and whitelist them in the sql server so my functions on a consumption plan would continue to function",NULL
+1032299970815303680,"aztechhelp any reason why datetime utcnow would generate a timestamp that s days in the past not eeriencing the same issue locally",NULL
+1032300480418832384,"yes that is one way to solve it as we add more scale units in the region the list will have to be updated as well",NULL
+1032304048374996992,"i think i ve to elain this via screenshot can i reach out later and get support on this please please don t redirect me to open a ticket",NULL
+1032304290088534016,"aztechhelp how is it possible to update tiller version to 0 0 in azure aks",NULL
+1032304751004844033,"definitely felt like a maintain momentum task rather than a proper and permanent fix i ll use the feedback form and see what happens thx again",NULL
+1032304930890104839,"any update on your roadmap as to when azure mfa enable and disable will be added to user admin role as opposed to global admin azuresupport gt",NULL
+1032305099396317184,"fyi azure app service is doing an ama right now 9 11 am pst tweet to with appserviceama with your questions",NULL
+1032306493989773312,"minutes in and our app service specialists are answering some pretty interesting questions get yours in now appserv",NULL
+1032306673304694785,"we are live have a question about azure app service join us with and",NULL
+1032306773041000448,"i ll check it out thanks does it work for resources on azure too",NULL
+1032307011516616705,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032309518171086849,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032311455582892032,"hi aniesh while i am not a substitute for support you can send an email ccompy at microsoft dot com to me asking a question this forum is better though if you can put the image in a tweet just to help anybody else with a similar question",NULL
+1032311602790445056,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032312710355148800,"any plans for an official solution to free automatic certificates for sll traffic on custom domains like letsencrypt appserviceama",NULL
+1032313186567909377,"hi patrick i d love to understand your use case for autoscaling up what metrics would you want to autoscale up on",NULL
+1032314527730126848,"you can use the letsencrypt site extension which works quite well",NULL
+1032315035664543744,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032317262915686400,"thanks for asking adding ram and cpu to one instance based in load spikes instead of having to scale up more instances",NULL
+1032317426464161793,"bummer but ok",NULL
+1032318225185472514,"by the way appserviceama this idea is awesome great mechanism for our questions any plans to do this with other azure services you should",NULL
+1032318741462351873,"its seems a little cumbersome with app registrations shared app hosting plan ect the azure way should be more turnkey like",NULL
+1032319584857141249,"get your questions in while you still can one hour left to go azure appserviceama",NULL
+1032322293509357568,"appserviceama any upcoming events in europe you are planning to join",NULL
+1032324719192592384,"not that we know of yet the new cadence for events is being planned right now and we should be hearing soon hopefully we ll have one in ams again",NULL
+1032324935794839552,"on multiple accounts i am getting error fetching tenants there was an error fetching tenants please reload the portal to try again",NULL
+1032325729894068226,"azurefunctions will be on in october",NULL
+1032325886882836480,"the letsencrypt extension does work if a bit fidley but it would be nice to see it baked into the service",NULL
+1032326119037362176,"appserviceama is starting in half an hour join our engineering team and to get all of your app service question",NULL
+1032326323241463808,"by the way appserviceama this idea is awesome great mechanism for our questions any plans to do this w",NULL
+1032326347270569984,"absolutely we have a lineup of services in the coming months fill out this survey to let us know what ser",NULL
+1032326805573648384,"here ya go",NULL
+1032326991897391107,"any plans to introduce standard v2 plans with path to migrate appserviceama",NULL
+1032327021647474689,"and that s a wrap thanks to everyone who participated want to know more about app service follow and and be sure to follow for the latest tips tricks and information on service interruptions",NULL
+1032327863264002049,"and that s a wrap thanks to everyone who participated want to know more about app service follow",NULL
+1032328714367852545,"ah okay and may i ask what sku you normally run on and what sku you usually manually scale up to like p2v2 etc",NULL
+1032328868030566401,"i have a question about best practices over at if you have any support folks who can chime in that would be appreciated",NULL
+1032330512910757889,"and that s a wrap thanks to everyone who participated want to know more about app service follow",NULL
+1032331917897609216,"not sure what you mean by migrate however with the price reduction in premium the logical scaling would be from s1 to p1v2 which would also be beneficial due to higher ssd in the dv2 machines in most stamps s2 price equals to p1v2 s3 to p2v2",NULL
+1032332492106346497,"i ll have another look i m not sure i had the option uk region to scale up to a v2 plan",NULL
+1032334131403706369,"should be available however it might not be in all scale units in the same region you could always try to redeploy your app in the same region",NULL
+1032337038803173377,"one in particular we run an s3 we don t manually scale or anything even auto scale just would be nice getting a million requests a week and would nice to scale w o complexity confusion having to write your app to handle scaling out scenarios",NULL
+1032337422598762496,"thanks issue created",NULL
+1032339965986971649,"aztechhelp i m having problem to open tickets since the support plan show in one subscription and the azure environment is in a different one can you contact me on private message to assist us in fixing this thanks in advance",NULL
+1032341710850994176,"sure what do you need",NULL
+1032342301278986240,"and that s a wrap thanks to everyone who participated want to know more about app service follow",NULL
+1032342417096224770,"yes but it shouldn t have this distinction",NULL
+1032342466500980741,"it s not a bug issue as far i can see it s a restriction on the lower app service tiers so not sure if engineers can help just would be great to have this available to other tiers",NULL
+1032342474428112896,"azcommunity i created a support thread but my problem is not getting addressed here is the msdn forum thread url",NULL
+1032342585426280450,"i sent details on private message",NULL
+1032347234522865674,"thanks post is here",NULL
+1032349454735618048,"we re still talking about scaling up correct s3 is the highest for the standard tier but under load you d like to scale to p1 or higher is that right",NULL
+1032360705054441473,"thanks to everyone who joined and i at the kubernetes workshop had a great time and now looking forward to prognet next month thanks to for being amazing when it felt like things were hitting the fan showmethevms",NULL
+1032365045777235968,"aztechhelp cisco call manager can it run in an azure cloud",NULL
+1032372076416401409,"mine is free subscription and i am trying out the feature before we decide here is the subscription id bef29 244f 4b25 8b6f 50873cd19647",NULL
+1032372303487586304,"the link is",NULL
+1032378091673276416,"i can t seem to create an account keep getting aadsts50058 a silent sign in request was sent but none of the currently signed in user s match the requested login hint",NULL
+1032379762658824193,"actually i can create a support ticket so i will do that",NULL
+1032380160274653184,"just did thank you",NULL
+1032381228610011136,"aztechhelp hello can i use the port in my ubuntu vm",NULL
+1032389961432018946,"default one is working fine a purchased one doesn t the record simply disappeared but the hostnames are still assigned to site please see image attached",NULL
+1032392120693338113,"yes exactly scale up dynamically based on demand then back down again dynamically maybe it wouldn t mean you re changing tiers per say insofar as those seem rigidly defined and not temporary",NULL
+1032396120582971393,"we are live have a question about azure app service join us with and",NULL
+1032398165297659904,thanks,NULL
+1032399309377916928,"wonderful thanks that s exactly what i was looking for",NULL
+1032399460125401090,"re reg 118082218837901 i haven t heard from the tech for quite a while and i could use an answer are they gone for the day if they are could you escalate and eedite this please",NULL
+1032402556285317120,"aztechhelp ssl cert becomes invalid for azure website what gives",NULL
+1032414800549228544,"all good now mostly my mistake",NULL
+1032415982008954880,"thank you so much i shall reach out here",NULL
+1032416146346016768,"okay cool thanks so much for providing your input",NULL
+1032417160339968006,"ok i ll do that tomorrow morning thx",NULL
+1032435677365907457,"thank you",NULL
+1032438583053836288,"thank you for your help i opened a question that can be found here",NULL
+1032445460890312704,"aztechhelp the app service certificate auto renew settings page could not be loaded",NULL
+1032451055282401280,"hi i d like to change my payment method but seems it doesn t work at all when i clicked add attached is the screen capture thank you",NULL
+1032462663874310146,"this solution it seem working with native apps only it seem cannot work webapps api on entity framework mvc anyway thanks i will looking for another way",NULL
+1032472415140556802,"data connection not working in my app service please help connection string tab shows a raincloud with a droplet looks like its not loading",NULL
+1032478375728672769,"azurefunctions will be on in october",NULL
+1032478390266224640,"by the way appserviceama this idea is awesome great mechanism for our questions any plans to do this w",NULL
+1032485950306148352,"i had luck configuring a pool with containers through the portal did that work for you",NULL
+1032523407877959680,"how can i be sure what device is actually sending data to my azure iot hub when reading the data of the eventhub d2c interface",NULL
+1032533796388786177,"hey there if you having any questions about your bill we would suggest you to reach out to our billing team throu",NULL
+1032533881046687744,"by the way appserviceama this idea is awesome great mechanism for our questions any plans to do this w",NULL
+1032535274004328448,"hi david our friends may be able to help thanks",NULL
+1032536462301061120,"do you know when",NULL
+1032537471530221568,"any reason why manually created azure func app via portal uses api version 03 01 cfr",NULL
+1032539269707911170,"hi do you know if microsoft is going to make these attributes available to the public if not customers are forced to use aad connect if they want to join devices to aad and get onprem amp cloud sso",NULL
+1032540984024883200,"hi guys how can we migrate a vm from azure pack to azure stack",NULL
+1032544777395421185,"it upsets me more than it should that the azure csp login page has a chap walking around data center looking at an open notebook the man could trip and fall azure microsoft",NULL
+1032545051006697474,"thank you",NULL
+1032545726377734145,"managed to find it thanks anyway azure iothub wooho",NULL
+1032567769018056704,"app service auto scale out",NULL
+1032567818586345472,"when you install data factory analytics preview from the azure marketplace you get the following error when you navigate to this solution resource this resource is unavailable please try again later any idea what s going on here and how to solve it",NULL
+1032570382706987009,"fascinating data science workshop with s and from teensinai2018 teensinai aiforgood computing platform microsoft",NULL
+1032574703842541569,"fascinating data science workshop with s and from teensinai2018 teensi",NULL
+1032578054156152833,"azhelp i have set up a trial i have created a resource for a database but do not know how to log into it what should be the server name login and password is the login and passoword the ones i use to sign into azure",NULL
+1032578990739992577,"when do you plan to deploy network watcher traffic analytics functionality in canada central region it seems it does not work right now",NULL
+1032584560771457024,"i am unable to see my access policy details",NULL
+1032585140868771840,"i am unable to see my access policies",NULL
+1032585485498179584,"we are eeriencing errors with azure notification hub is this a known issue started around minutes ago",NULL
+1032586759094321152,"we get an uneected exception encountered when trying to send notifications i ll dm you more details",NULL
+1032588524791517185,"yeah at the time i think they only supported windows containers is that still the case",NULL
+1032589941522554881,"thanks to everyone who joined and i at the kubernetes workshop had a great time and now loo",NULL
+1032593235363942400,"we are seeing the same thing all send and register operations fail on notification hubs western europa portal dashboard for hub doesnt load as well",NULL
+1032593412950831107,"fascinating data science workshop with s and from teensinai2018 teensi",NULL
+1032593421318475776,"raised an issue on support support request number",NULL
+1032593602034245632,"fascinating data science workshop with s and from teensinai2018 teensi",NULL
+1032593709366476800,"hey i need to spin up some vms standard dv2 family vcpus for a workshop this afternoon and my limit is se",NULL
+1032594026304819200,"slightly annoying",NULL
+1032595734238056453,"aztechhelp can t connect to remote desktop error nla",NULL
+1032595912642707458,"happens when you stick the window to the side of the screen",NULL
+1032596691193683968,"hi rovin can you refer to the details on and let us know if this helps fc",NULL
+1032597363003744256,"fascinating data science workshop with s and from teensinai2018 teensi",NULL
+1032600687467745282,"having the same issue there our notif hub just stop accepting all request since 43 utc",NULL
+1032602237904871424,"hi yeah we re seeing the same plz send halp",NULL
+1032602454318370816,"hi thank you i ll try these options",NULL
+1032604179259449344,"it seems like my azure postgres server suddenly kept dropping connections for minutes for no apparent reason then went back up is there something wrong with the service",NULL
+1032605423101202432,"we are having problems with notification hubs in the west europe region unable to connect and no info on the portal any problems",NULL
+1032606031438856192,"any chance will make it into in my lifetime without hooking up scripts",NULL
+1032608487820484608,"the roadmap for cloud services is like a graveyard the peak of hope it would get a little attention and dragged out of classic networking after the post last december on the feedback portal that it would be looked at this year seems like just words",NULL
+1032609725039501312,"aztechhelp i ve been using azure web apps for some time now i often eerience that ttfb is a great bottleneck even if it s a high tier application my question is is there any way reduce ttfb in azure web apps",NULL
+1032610454554726400,"fascinating data science workshop with s and from teensinai2018 teensi",NULL
+1032612748394283008,"can you please let us know if the deployment of ml models from data bricks is possible through aml workbench and cli we found that its only possible through hdi but not azure data bricks can you please let us know whats the alternative for deploymenyt from adb",NULL
+1032614720686247937,"same for us error responses for all our notifications hubs but no information about that on azure status",NULL
+1032614836235132929,"aztechhelp we just had an outage of one of our notification hubs major production outage but your status page said all green and when i tried opening a support request the automatic health check also reported all good i d to know what happened",NULL
+1032615039910338560,"sent a message just now",NULL
+1032617130104184833,"hi is there a page where it s possible to check all the azure machinelearning studio features just released to be released and so on thanks",NULL
+1032617678345777153,"hi david our friends may be able to help thanks",NULL
+1032617913101025280,"aztechhelp my services are down mysubscription are valid until june whats wrong my client was sttoped",NULL
+1032618072371343361,"hey there we would suggest to have a look at our roadmap where you should see upcoming and recent released for",NULL
+1032618130265321472,"hi david there is a good stack overflow documentation on this topic on th",NULL
+1032618693673590784,"i ve just created a storage account a blob storage account i then create a container and set to blob anonymous every time i enter a name it just says forbidden i m using the correct logic i don t understand what i m doing wrong",NULL
+1032621068207489024,"we found this documentation that lists sql server or later databases as being compatible with azure s",NULL
+1032623100796563456,"notif hub are working correctly now thank you",NULL
+1032623821944233986,"no the issue seems to be resolved still waiting on an update to the status page on our end we started eeriencing the issue at 08 23 00 30 702 the last error occured at 08 23 51 43 231",NULL
+1032624456450142208,"same here first error at 08 23 00 30 702 last error at 08 23 51 43 231 issue seems to be resolved but no status page update as of now required for customer communication",NULL
+1032625438386991104,"from what i can see in the portal there isn t actually a subscription linked to this aad just the vsts organization",NULL
+1032626041146236928,"how do i answer these",NULL
+1032627870487797761,"i am having trouble with the price calculator the price for azure sql instance does not seem to reflect any of the options i can select through azure portal and is way more eensive please advice",NULL
+1032628982125154304,"all were like that but i refreshed the page and it magically went back to english nothing unusual in the url either just id gt",NULL
+1032629262015180801,"no notification in our portal dmed you",NULL
+1032632077349466117,"yeah all english and always has been never seen anything like this before",NULL
+1032633133097730048,"i already checked that link i found the following feed is empty and it doesn t refer to azure machine learning studio",NULL
+1032633789107916800,"aztechhelp unable to add data connection connectionstringpart may corrupt",NULL
+1032633872461324288,"this is the link for everything related to machinelearning almost empty",NULL
+1032636411181117440,"aztechhelp updates for my ubuntu version vivid 4 no longer exist is there a way to upgrade to trusty 4 so that we can use äpt get to stay up to date",NULL
+1032637213413126145,"i also follow that blog but there are only main announcements i tried to get a feed from this site instead but there is no feed available so it s impossible to keep informed on new small releases azureml",NULL
+1032639946744623107,"and that s a wrap thanks to everyone who participated want to know more about app service follow",NULL
+1032641292486901760,"thanks but this article looks old my virtual machine blade has an update management link but no automation control or manage updates this seems to be referencing an older version of the interface do you have a newer article",NULL
+1032642915162644481,"done hope to get a way to keep informed",NULL
+1032643750579916800,"seems a little messy i ve tried to move the app to a supported rg region but scale up still greyed out having to clone the app but this doesn t clone the stage slot and no option too and finally vnet integration to my gateway is not listed in the new v2 app",NULL
+1032645763203915782,"azcommunity we ve been using o365 for years with no on prem server now we need a server we have windows devices which used the azure join feature if we create a domain on our new on prem and use azure ad sync is that the best or only to do this tia",NULL
+1032648759786844160,"good job",NULL
+1032649074489679872,"no my dell laptop at x resolution",NULL
+1032650198881730561,"in here it says linux agents must have access to an update repository which is my problem my linux agent doesn t have access to an update repository and i need to upgrade the os is there an easy way to do that without loosing my ip address",NULL
+1032655119865860098,"just looking for a clean path to scale up from s3 to p2v2 step are on my previous tweet i ve tried to move but no success i m now trying to clone but under networking my vnet gateway is not appearing",NULL
+1032658932257280000,"i m routing my data factory logs activities pipelines triggers to a storage account and i m a not getting all my logs and b start times and durations are all off 20 milliseconds i ve set a min reoccurring trigger are there known bugs",NULL
+1032664416326545408,"before cloning create a new app and see if you can select p2v2 at the app service plan create step then you should continue with the cloning",NULL
+1032666662628151297,"anything up with storage in west europe north europe",NULL
+1032666945533820929,"see attached just enabled this capability in the azure montior to evaluate for a client don t know how to monitor the azure monitor for errors",NULL
+1032669054773936129,"is it possible to link a virtual disk to an app service the goal is to ee it and use it to store datas from a mongodb docker container and get all benefits like backup of azure virtual disk",NULL
+1032669566701322240,"i have my entire business on azure really debating pulling myself and all of my clients off i m tired of these tech companies and this blatant hatred how hard is it to just do your job and leave the racism at home christina",NULL
+1032670585053224961,"your engineer helped us through the workaround thank you for the swift and adequate support",NULL
+1032674603884322817,"think that ship has sailed",NULL
+1032676129637900295,"sure you have all extensions turned off while viewing this some browser extensions can really do some weird stuff",NULL
+1032678284507660289,"i have my entire business on azure really debating p",NULL
+1032680927632220167,"i have my entire business on azure really debating p",NULL
+1032681754732232705,"sorry you hire racist people like this is this how you wish to be represented to clients possible clients or the world shameful",NULL
+1032692245869326336,"guillermo hernandez hello i need help trying to allow an inbound connection from an external server in azure environment",NULL
+1032692692755591168,"wondering if anyone can help me delete an unused ad tenant tried a few approaches hitting a brick wall deletion of multi tenant application is currently not supported and updates to converged applications are not allowed in this version thanks",NULL
+1032692974977732609,"hey yes we need to allow an incoming connection from external ip to azure we are having issues with it",NULL
+1032693948727349248,"wow that was quick",NULL
+1032694026393268224,"any updates on getting cosmosdb on azure stack",NULL
+1032699573104467968,"of course i was asking becuae of this october more details on azure cosmos db on azure stack will follow as we make progress on it",NULL
+1032702157403942913,"aztechhelp i am getting this when trying to access my brand new azure virtual machine with my brand new remote desktop for mac we couldn t connect to the remote pc make sure the pc is turned on and connected to the network and that remote access is",NULL
+1032704658106662913,"thanks for the help but i m still eeriencing the same problem no matter what i do the azure portal says i have app registrations to delete before deleting the directory",NULL
+1032705210823712769,"get azureadapplication cmdlet lists single app deleting it generates deletion of multi tenant application is currently not supported error and i am unable to change multi tenancy property on app",NULL
+1032709308822290438,"sent a dm",NULL
+1032709336659906561,"hi this guidance didn t help once i removed the hostnames from the custom domains blade i couldn t add them back it asks me to validate a domain ownership but i couldn t do that because as i mentioned the domain i purchased has disappeared from the app service domains",NULL
+1032709384714039296,"aztechhelp good day i just created a azure database for mysql resource and i seem to be able to telnet to the resulting host on port from anywhere even with a firewall rule is this normal behavior or am i doing something wrong",NULL
+1032710573325279233,"appreciate the help here on this i got an app cloned onto the p2v2 plan i guess i m just trying to say that the scale up isn t as seamless as i would eect from a paas feels more like a lift shift and fill in the gaps",NULL
+1032712110084632577,"azure ad sync complains about mail attribute being mismatched although its displaying the same address under both columns tried using idfix it finds no errors",NULL
+1032712556044013569,"aztechhelp i need to create another user to my database without admin rights just to allow him her to use my frontend application developed in access to connect and edit data how do i do it",NULL
+1032717589464711168,"what event actually triggers the input of the mdm url during an autoenrollment in to mdm have some machines that are hybrid azure joined but dont have the mdm url listed in the dsregcmd status although they are in the proper mdm scope group",NULL
+1032717661522644992,"it is on our roadmap thanks",NULL
+1032719647576150017,"is that what the joker looks like without makeup",NULL
+1032723034199732225,"hi yes just and sql database",NULL
+1032725941469028352,"aztechhelp hello i am having problems with the database connections of our postgres service when connecting us through a client bdeaver it shows me the following message remaining connection slots are reserved for non replication superuser connections",NULL
+1032727277002543105,"no luck i m afraid using the remove azurermadapplication cmdlet generates the same error deletion of multi tenant application trying to change the availabletoothertenants property also fails with the error updates to converged applications are not allowed",NULL
+1032728823417188353,"will do thanks for your help",NULL
+1032731803256115200,"true this is due to the fact that we just won t have the ability to host pv2 is all scale units",NULL
+1032738731126648837,"can someone from the web apps api team look at this using the azure sdk if you call azure appservices appservicecertificates list always throws an exception because the real response doesn t match the documented response",NULL
+1032742349309267970,"aztechhelp how do i delete my account no unsubscribe not delete content and be happy with the empty container how do i delete the whole kit and kaboodle",NULL
+1032749340903829504,"could be extensions could be browser just wanted to let you know that this exists and that most other sites i visit don t have this problem",NULL
+1032752661450432520,"i am trying to scale an azure sql database from s4 to s7 and for more than minutes is stuck to is this normal how long should scaling take",NULL
+1032753541427945473,"it doesn t help the paragraph you domain is no longer visible in the azure portal or domain was accidentally deleted describes exactly my case but i can t purchase this domain once again the system says it s not available pls see the screenshot",NULL
+1032753902972755968,"thanks it worked very well very good support",NULL
+1032757884138991617,"ok thanks for the help it was a little project of mine to get this scaled up i ll chat to my team and maybe we will create new apps got ish apps in multi regions i would like to scale i was hoping for a simple path to the p2v2 plans",NULL
+1032767037800476672,"i hear you it s unfortunate that we aren t able to provide a seamless transition in some scale units please let me know if our team can support yours happy to jump on a call",NULL
+1032783330649862144,"azhelp i have some old vms in win2012 and i was able to increase the size to a few years ago i created a new one win2012 and the option to increase the size is disabled it says remote settings cannot be change any solution screen is too small for me",NULL
+1032785335959224320,"is it possible to link a virtual disk to an app service the goal is to ee it and use it to store datas fro",NULL
+1032799227397562368,"yes but it doesn t elain why diagnostic logs from adf v2 are missing from the storage account i ve setup is azure monitor still in preview or is it possible that the routing from adf v2 has a bug in it can you recreate this issue",NULL
+1032800900820160513,"the link you provided doesn t work",NULL
+1032827764271804417,"we are live have a question about azure app service join us with and",NULL
+1032831563875184641,"hello is there a contact for or email address in which i can get in touch with someone in regards to a website which utilizes your hosting but which is engaged in malicious and illegal activity which is in direct violation of a court ordered injunction",NULL
+1032834230261358592,"thank you very much i will submit the report tonight along with court documents",NULL
+1032864831139770369,"hey guys i get this error when i try to use connection troubleshooter in azure network watcher i tried it from edge too but same error coming even connection monitor creation also failed with same error",NULL
+1032869430168973312,"i tried it now for a troubleshooting doesn t know exactly how long it was unavailable for a few days back it works without any errors",NULL
+1032870935823437824,"not sure about it because i tried it today for some time",NULL
+1032872202725601281,"still error coming sign out and log in again",NULL
+1032889125723156481,"latest chrome ublock and lastpass",NULL
+1032892239347888128,"is it supported to use standard ssd public preview in production",NULL
+1032895097719808005,"if the underlying physical partitions are less than does logical key distribution make any difference coz rus are per physical partition correct",NULL
+1032896771322720256,"aztechhelp is it possible to get xbox live service to nat type to open the best thing i get is is moderate it does not suit our game server for ark",NULL
+1032902203646914561,"this is a azure problem i have open all the ports xbox live services need the best i can get is moderate it must have someting with the network configuration to do thank you for your reply anyway",NULL
+1032917944056143873,"aztechhelp playing with azure backup and so far i haven t been able to complete a single initial backup in weeks of attempts excluded anti virus tried fiddling with the exclusion settings so far i m getting a very uneasy feeling about azurebackup",NULL
+1032921890317365248,"aztechhelp why am i getting error could not read from socket error in the pull function when i try to use ftp on my azure app service this is happening from everywhere i try",NULL
+1032924733141069824,"i ve been trying to change nameservers for hous now but they still haven t changed",NULL
+1032926845489033217,"can you help me understand difference between virtual network connectivity and app service hybrid connections",NULL
+1032927128688451584,"configuring auth with aad in",NULL
+1032942059139858432,"after the ssl eerience changed in web app client cert doesnt work anymore i uploaded the cer file also to the public cert store and it worked for mins then error again",NULL
+1032945874715009024,"how do i get access to an app service from a linked tenant app service only resides in default directory and subscription not available to sub tenant",NULL
+1032948964318949378,"ublock can definately do weird shot with som advanced web pages would turn it off along with lastpass both mess with the pages code",NULL
+1032949422307651584,"azhelp hi i m unable to find my azure subscription dashboard shows nothing account is loebooks",NULL
+1032949598183153666,"hi could you please help me ton configure lumify please thanks",NULL
+1032950087624876033,"the error is not elicit",NULL
+1032953032651223041,"ok i ll do that thanks",NULL
+1032953393516433409,"any idea when sqlserverbackup will be in ga it s in preview for a long time now",NULL
+1032954871048220672,"is there an easy way to grab the full http request response for a web app",NULL
+1032957839445114880,"i hosted an app using web service and added auth i followed this how can i get user information in my app",NULL
+1032958759318970368,"email and name",NULL
+1032966045391237120,"that helped thanks ak",NULL
+1032966838739709953,"does anyone know how to configure azure diagnostics to be written to a loganalytics sink in wadcfg cc",NULL
+1032971942838460416,"yes that s the one",NULL
+1032973696644706309,"anyone else hitting this issue when calling gateways from i had to elicitly enable tls else was getting bad gateway weirdly enough the same call was successful from curl without elicit tls",NULL
+1032975657372934144,"we are planning to ga it in first quarter of year we will have exciting features at the time of ga stay tuned",NULL
+1032978464440311808,"any ideas i wonder if it has anything to do with creating the app say almost a year ago the feature seemed to be a bit buggy until recently",NULL
+1032978531150688256,"how do you prevent web app from returning chuncked data our app which was returning content length is now returning chunked and breaking things",NULL
+1032983665662468097,"hey all how do i change from pay as you go to reserve pricing",NULL
+1032986576312123393,"thnx for the link forgive my ignorance the question still persists to rephrase it if the number of underlying physical partitions remains the same does the distribution of logical partition key matter given that the rus configured for the collection haven t changed e g k",NULL
+1032987704030638081,"sounds great would be interesting to investigate further",NULL
+1032996924327112704,"our friends would be happy to help",NULL
+1032998932626866176,"here is the link",NULL
+1033001517370884096,"the cosmos db service constantly optimizes the partition allocation management logic if you provision lt 1000 rus you will only be allocated one partition",NULL
+1033001706588491778,"however our recommendation is always focus on picking a good partition key rather than trying to reverse engineer the number of physical partition and ru allocation so that you can take advantage of new capabilities behavior in the service",NULL
+1033002071052693504,"aztechhelp good morning now i have two db with us one of them have dtu now but i reduce to dtu now because the percent use was you think db will work fine with dtu my email is atpayero com can you verify please",NULL
+1033002214871130113,"please connect with us at askcosmsosdb com if you have further questions",NULL
+1033007138212376580,"hey azure support thank you it does help however i m also hoping to get any recomendation amp first hand eerience on the specific azure vm sizes e g is it better to take a storage optimized vm ls or a memory optimized one dv2",NULL
+1033033898790477824,"aztechhelp i want to move a recovery vault only used for simple file folder backup via azure backup agent to another resource group why is this not possible or even better let us rename resource groups in azure for easier organisation just enable it thx",NULL
+1033035536016044032,"aztechhelp i m trying to configure ftp on iis and azure but i m not able to connect on ftp app display the following error could not connect to server can you help me how to configure the ftp please thank you",NULL
+1033042630488285185,"well posting a question on that forum wasn t really helpful are there any other support options",NULL
+1033044561004818439,"well the engineer just re iterated over what i already knew and tried before filling support case requires paid support plan is it i don t want to pay for the support opening this ticket in regards to the azure services that supposed to be working just fine",NULL
+1033050828536467456,"phishing o365 hx",NULL
+1033051391626018822,"phishing o365 hx",NULL
+1033051484043268098,"phishing o365 hx",NULL
+1033052017952993281,"phishing o365 hx",NULL
+1033056501135548416,"try to submit feedback on azure atp portal and i get an immediate undeliverable that the email it sends to is only for internal users as senders",NULL
+1033058511553482752,"if we disable schedulerjobcollection will it be billed",NULL
+1033059660595650560,"submitting feedback about feedback",NULL
+1033061360140251136,"i would like to create a scheduler in azure we have different pricing tiers standard p10 p20 the cost is around 9 month let us suppose i created a scheduler using standard tier and later i disabled this will it be billed 9 month even it is in disabled state",NULL
+1033072761588068352,"do see it s more or less a copy of your actual office login page with a password field right granted there s no email field which in its self odd however i think it s more of an issue for you as in ms than it is for the op might want to shut down that app service no",NULL
+1033073083287052289,"aztechhelp having trouble verifying my custom domain even though i have added the txt record in my host cpanael this is the error i get could not find the dns record for this domain dns changes may take up to hours to propagate please try again later",NULL
+1033073561156689920,"is this okay",NULL
+1033073907845263360,"it s a phishing site so you could assist with taking it down takeitdown",NULL
+1033074001910874112,"looks a bit worse for wear that one i quite like the fact that it s actual hosted on their azure platform probably for free to it s like an added insult",NULL
+1033074512923750401,"do we have dedicated handle for microsoft authenticator app suppport or pm",NULL
+1033076545907126272,"yeah even tried looking into app logs but that didn t help much any direct contact email link where i can get better assistance apart of opening a support case",NULL
+1033089253163577344,"azhelp hi i have troubles using the active directory enterprise state roaming its not syncing in any way the funktion sync is enabled in windows pro i tried the wallpaper and edge favorites",NULL
+1033089324491915264,"anybody has been there node type is not primary reliability is silver durability is gold autoscale is enabled in scale set when downscaling service fabric fm show nodes in fail state does not remove them anybody",NULL
+1033092516130828288,"no error code this time i we are new to azure and active direcotry premium p2 and want to have this cool feature called enterprise state roaming yesterday we did the setup and it took some hours to unlock the feature sync settings in windows but its not syncing",NULL
+1033093683820855297,"should it sync the settings instand or does it need some time i tried to lock the user or log them off and on again tried to deactivate the two factory authentication",NULL
+1033095977723457538,"phishing o365 hx",NULL
+1033097769156632576,"we ve been stuck for hours in pending domain validation approval for verizon cdn trying to activate domain with ssl for endpoint cname seems correct why so slow",NULL
+1033107629302640640,"azhelp can i use an app service certificate ssl on my plesk onyx installation hosted on azure",NULL
+1033108841309687808,"no error the custom domain entry for the endpoint just remains in this state after attempting to enable ssl i ve subscribed to standard support for quicker response opened a case still no joy",NULL
+1033110801547055105,"hi i created support ticket case118082318846166 with my questions as i mentioned in the forum support guy answered one and want to have another support ticket for answering my second question which falls under the same domain of ad but little comple kindly advise",NULL
+1033114577888661504,"my signup for the free trial keeps failing and i am then taken to a page for paid support options help",NULL
+1033123327718633476,"hey you guys got my contact info guy gave me a call was suppose to send pricing info so i can get a test lab spun up for sccm intune",NULL
+1033134914407780353,"yes that link allowed me to support request with two questions related to ad but support guy want new support request for my second request",NULL
+1033135416558284800,"regarding the existing request case i don t see any email communications in the case history after 23 is it closed the link doesn t allow me to create another request 2nd request",NULL
+1033141420163354624,"case opened as critical at fri aug 15 24 pm utc request this comes after a couple days of attempts to get ms standard preview cdn working domain validation was quick certificate provisioning took many hours purging never worked so tryng verizon",NULL
+1033141726611832832,"hi tim sorry you re having issues our friends can provide further assistance",NULL
+1033145389279576064,"aztechhelp i received an email about an inbound outbound ip address change that could potentially affect me how do i know if it does if so what are my new ip addresses",NULL
+1033158588405960704,"are you any good at freezing time nothing else seems to work but thanks for giving them a shout",NULL
+1033183190549258240,"my colleague azure account having too less locations to make windows virtual machine she wanted to make in germany location but there none but as per this article azure have germany locations can you elain",NULL
+1033190247931228162,"hi so as i can see for germany locations we have to sign up at azure germany which i just tried so it is like creating a total new account in it right i did i go for free trial account i tried different cards but after deduction of money i am getting this",NULL
+1033191195286155266,"oh i was using a private window of chrome i will try again in normal window browser and will let you know",NULL
+1033206894544842753,"phishing o365 hx",NULL
+1033210314987171840,"aztechhelp cannot access azure data factory at the moment it s just showing a blank page",NULL
+1033211560242569221,"thanks for your prompt response i m in australia but the data factory is in the east us region i m using chrome but i will try firefox too",NULL
+1033213238379343873,"it s not working in firefox either",NULL
+1033233163919806464,"phishing o365 hx",NULL
+1033241053976043520,"phishing o365 hx",NULL
+1033251638075695104,"azhelp why not able to request a consultation for access partner central for ms marketplace app source",NULL
+1033252239211732992,"why not able to access partner central for ms marketplace app source azhelp",NULL
+1033302616841699329,"this is a nightmare i spent two time critical days working with azure support to learn that it is an office365 support issue now i ve been on hold for hour minutes trying to get through to office support",NULL
+1033302945868050433,"trying to reach office support in hong kong",NULL
+1033303177032945665,"in the meantime my whole team has been locked out since tuesday night",NULL
+1033315063812247552,"we are live have a question about azure app service join us with and",NULL
+1033321228570972161,"phishing o365 hx",NULL
+1033329842643599360,"phishing o365 hx",NULL
+1033330366021492737,"hilarious the person s running this account are obviously not up to speed on phishing",NULL
+1033335340260618241,hilario,NULL
+1033348745679659008,"i am unable to access properties of b2c application is this a known issue here is the output in the browser console",NULL
+1033359277182730242,"anyone know how to automatically import an openapi swagger definition file into azureapimanagement gateway whenever a change is published to my azure aspnetcore web api vsts doesn t seem to have any build deploy tasks for these",NULL
+1033402683607212032,"phishing o365 hx",NULL
+1033407489042272256,"some of my appinsights alerts are firing in a very weird pattern i m getting both healthy and unhealthy emails at the same time in the portal pings from west us central us and south central us are failing but north central us and east us are succeeding",NULL
+1033409512840028160,"intermittently every couple of hours since thursday morning utc then constantly every mins since yesterday around 50pm no changes at all from my side for a long time",NULL
+1033410072200835073,"not sure if i d look for a networking issue since test locations have success and have or a data ingestion processing issue since i get emails stating 0 test locations failed right next to others that say 3 test locations failed for the same site",NULL
+1033415162693410816,"still getting this in normal chrome browser something is really bad in here please look into this p s it is azure germany",NULL
+1033425495172554753,"aztechhelp i provisioned a d4 v3 vm and it is running a local process slower than my local machine i7 4790 cpu ghz gb am i doing something wrong",NULL
+1033427816556253184,"we have some appinsights alerts that keep coming after we deleted the alert suggestions to make them stop",NULL
+1033430180835074049,"phishing o365 hx",NULL
+1033432953622122497,"fascinating data science workshop with s and from teensinai2018 teensi",NULL
+1033439876564361218,"hey any known issues with event grid or azurefunctions i have tried to create a new subscription for quite some time now",NULL
+1033439879139602432,"hey any known issues with event grid or azurefunctions i have tried to create a new subscription for quite some",NULL
+1033441495183970306,"hi thanks for your reply i logged in with another account tenant admin right after my post that subscription went right through the other account which is owner of the rg had the problem was sitting there for at least minutes without feedback i guess it was a perm issue",NULL
+1033442561266991104,"was creating an azure function few minutes ago and also had to try few times although mine got stuck on validating probably some unplanned maintenance",NULL
+1033444535647592453,"was under validation on the event grid subscriber in my case",NULL
+1033573360070885377,"aztechhelp how does virtual machine add more public network ip",NULL
+1033574968628367360,"can a virtual machine allocate multiple public ip addresses",NULL
+1033589767693193216,"there is no way to add more than one ip to a virtual machine prompting a network card interface to associate only one ip how can a network card interface associate multiple public network ip",NULL
+1033614469383958528,"this is a disappointing and sad eerience i learned this morning that my very first requestion to the engineer to elevate severity from c to a was ignored as of this moment you still have it c my team has been locked out since tuesday azure",NULL
+1033614470738845696,"this is a disappointing and sad eerience i learned this morning that my very first requestion to the enginee",NULL
+1033641743554629634,"hello there i have a problem with my website hosted on azure i get this message when i access the website the page cannot be displayed because an internal server error has occurred and also i cant access my phpmyadmin also aztechhelp",NULL
+1033643752202665984,"i ran a diagnosis an i saw an error that my app is eeriencing server errors see attachment below",NULL
+1033646929257877504,"hello anybody home",NULL
+1033654674770026496,"hello there i have a problem with my website hosted on azure i get this message when i access the website the page cannot be",NULL
+1033659837358452736,"ms does not allow me to use azure ai",NULL
+1033660092724523008,"ms does not allow me to use azure ai",NULL
+1033698259246637058,"this query is regarding azure storage file service is there a limit on the maximum number of files that can be stored in a single directory and the tree depth limit for directories on the azure storage file service if yes what are they",NULL
+1033711513180069893,"yes thank you this is what i was looking for",NULL
+1033743999901687809,"payment method update card swap especially is failing since yesterday tried multiple browsers but no luck what s the typical reason for failure is this related to the card or is the billing page buggy related support reqid",NULL
+1033745349540605952,"is there any number we could reach them on directly there doesn t seem to be one for india please share if there s one",NULL
+1033747188734676993,"is the arm template for the always on sql cluster available on github the latest same version as the one on the azure marketplace it seems like there s more options available in the one on the marketplace than there are in the github template",NULL
+1033748139738427393,"thanks for help unfortunately azure support only operates between mon fri during standard biz hours ist funny that the ivr notified about team azure mailbox is full and is not accepting any more messages so much for the power to grow infinitely in cloud",NULL
+1033748926527156224,"the version in the marketplace has an option for sql server but the one on github does not have that option 1 2",NULL
+1033748980780421120,"sql2012sp2 ws2012r2 enterprise sql2012sp3 ws2012r2 enterprise sql2014 ws2012r2 enterprise sql2014sp1 ws2012r2 enterprise sql2016 ws2012r2 enterprise 2 2",NULL
+1033749690024488960,"on a side note that error message belongs to the error message hall of fame right below pc load letter and something happened",NULL
+1033755190153936899,"sorry guys but that link seems to go to the same place i tried to find a mssql forum there but didn t see anything that looked appropriate",NULL
+1033760849272418304,"already have two tickets open last one today all our servers are down and service interupted",NULL
+1033763414559129601,"done the other ticket is from aug and last reply days ago looks like azure support is handled by microsoft is not honouring the contract and documentation provided on the ticket",NULL
+1033785642667462657,"hey aztechhelp in cdn the domain validation is in the same step since more than hours the cname is correctly configured thanks for you help",NULL
+1033788584048971776,"i am in this step the cname has been configured hours ago according the documentation there is no email and the step should take only few minutes my domain is pointing to",NULL
+1033789913358118912,done,NULL
+1033809347690811392,"aztechhelp if i schedule a daily backup to azure of files folders at hour x and the client computer is offline at that time will it start backing up when it comes online or should i ensure that the client is online at hour x",NULL
+1033810184131497985,"hi are you waiting for the domain validation email na",NULL
+1033847635847901187,"tried creating a new azure germany account and setup a pay as you go subscription after entering the phone number for validation the validation failed tried to contact support via provided link and that happened after entering credentials",NULL
+1033849728734306305,"yes it looks like it did work thanks",NULL
+1033850840208089088,"phishing after i reported this phishing site days ago to the site is still up",NULL
+1033851944786440192,"smokes last cigarette rocks back and forth",NULL
+1033854993487486976,"can you tell us when the sa nodes will be live the web site only says",NULL
+1033855949348298753,"thanks br sorry if i wasn t clear by sa i meant south africa za chris",NULL
+1033856899676958720,"sure the azure site just says coming soon",NULL
+1033857548170878976,"awesome thanks chris",NULL
+1033862077893554178,"aztechhelp after increasing the limits to e32v3 32 vms gb mem why am i not able to install hana plarform sps3 instance by sap cal",NULL
+1033863715706298369,"dm done",NULL
+1033895271938379777,"not the best email i ve received maybe future versions can include working links why does azure vsts feel like it has less qa than some of my indie projects this week",NULL
+1033896342307962881,"oh look it gets better qa failure bigiron or badjoke",NULL
+1033899174557872129,"phishing after i reported this phishing site days ago to the site is still up",NULL
+1033908365972271104,"phishing after i reported this phishing site days ago to the site is still up",NULL
+1033909251754749952,"getting this error creating a webapp on australia east not enough available reserved instance servers to satisfy this request currently instances are available if you are changing instance size you can reserve up to instances at this moment status update",NULL
+1033933360169504768,"azhelp mistaken application for a subscription if canceled this makes me very upset",NULL
+1033935147920314369,"misoperation of two support cannot be closed resulting in an application for deduction how do i close",NULL
+1033935869369958401,"how to stop subscribe to these two warnings which makes me very distressed",NULL
+1033942732866088960,"azhelp how to pull logic app connector s metadata using c sdk",NULL
+1033949839032307712,"this is where premium azure support really excells but then again it should not have to be like that hope your business continuity plans are working",NULL
+1033977120475635712,"getting this error on a few websites any fix",NULL
+1033980493597798401,"it s not my website just wanted to download a few things from there and i ended up getting this error since last hrs",NULL
+1033983162798489601,"azhelp i have received a message saying i have an outstanding balance however haven t done anything in azure so i don t understand where this bill is coming from",NULL
+1033983627409862657,"quota issues then isn t it",NULL
+1034018258352001024,"i opened a trial account created an active directory it says that the resource is set up but i do not see it when i try to access active directory tab it says no permission",NULL
+1034056700028960774,"phishing after i reported this phishing site days ago to the site is still up",NULL
+1034059201281224704,"it would be nice to have an email to complain about your services",NULL
+1034060043845545984,"yes this happens on safari and chrome as well is it possible to have the ip blocked",NULL
+1034060750782906369,"it s back up only on chrome",NULL
+1034061941948510208,"aztechhelp i purchased a windows instance with preinstalled wowza engine manager from azure market place what are my credentials of wowza account i need them to create a stream lock certificate from their portal",NULL
+1034063205839134720,"thank you",NULL
+1034063568268877824,"azhelp i m trying to enable search for cosmodb mongodb api but there is nowhere in the left panel cosmodb dashboard to add search",NULL
+1034068060376891394,"learn all about azure backup reporting today at the azure academy",NULL
+1034074175093317632,"azure keeps deducting from my card without activating any service several mails to support none has been answered",NULL
+1034083416994717697,done,NULL
+1034094653371547648,thanks,NULL
+1034103397115408384,"phishing after i reported this phishing site days ago to the site is still up",NULL
+1034115446549737473,"i have a webapp that wont allow me to set its virtual directory setting the settings have the webjobs and inappmysql disabled too what am i doing wrong",NULL
+1034116856188203008,"the settings have for the past years been in the same place in a new appservice gt application settings gt no virtual directory settings in all my old app services in the same location the settings are present refer to screenshot",NULL
+1034118961208717312,"i ve done that before and got charged r300 which is allot of money in my opinion for something that should always work this has occurred before and i never got a real answer as to why it occurred",NULL
+1034129490803343361,"is there a way to test if a vm on is still available if a certain datacenter is down vm disks are stored on geo replicated storage account",NULL
+1034131154016919553,"no issues at the moment it s just a general question and i would like to know what would happen in case it happens",NULL
+1034133128955215874,"i signed up for a paid azure support plan at 100 mo i created a c ticket on the rd i m still chasing support reps to do a live session do none of your support engineers work est hours",NULL
+1034133492865658880,"but there is no way to test ahead of time if the vms will remain available and running from other data centers",NULL
+1034134397803421696,"problem is that i don t have a way to create a second support ticket i have been authorized by you azuresupport to submit only one i can t able to create any more i am having free subscription for now since we are trying out",NULL
+1034135540856119297,"loecda where is the api documentation to configure not enable jit access to vms we need to be able to setup this up in our infrastructure as code automation",NULL
+1034144794778337280,"twitter is async no problem",NULL
+1034145844012957696,"successfully deployed my website and services multiple times last success at 33pm est now all deployments are failing with serverfarm provisioning errors but no detail just internal server try again later for mins need to update my site",NULL
+1034148963849367552,"yes i ve seen that how do you automate this without using the azure portal",NULL
+1034155188964052992,"aztechhelp my appservice uses the b1 app service plan but i am unable to assign custom hostnames as per this doc instead i get click here to upgrade your app service plan",NULL
+1034179684400021510,"hey is there any know issue on creating oms solutions in the portal right after the solution is created when i try to access it it says the resource is unavailable",NULL
+1034184791933902848,"aztechhelp hey you all i m having trouble with query time in my web app sql database on azure can you help",NULL
+1034192245233209346,"we re seeing azure template deployment failures for appservices all failing with error internalservererror the resource operation completed with terminal provisioning state failed this is in the east us region is this widespread",NULL
+1034194679384993792,"thanks checked the status page just didn t know if you had any other reports internally wanted to cover our bases and make sure it s an us problem rather than an azure issue all of our appservice releases are failing when deployed using a template",NULL
+1034200435228176384,"hey is there any documentation on how node sites are supposed to work when deployed to app services i can t seem to find any on how the web site is supposed to know how to configure itself what js file to run to launch server etc azure node javascript",NULL
+1034201014281199617,"sorry we ve been digging in here the errors seem intermittent as some of our releases are succeeding and some not using the same template version it s after hours here and we have no client facing prod deploys remaining today so going to keep researching tomorrow",NULL
+1034201751560146944,"to be extra clear here the app itself isn t even being deployed so we re unable to manually run it and diagnose through kudu it s the actual provisioning updating of the app service plan itself that is failing",NULL
+1034203757557440513,"catch up on some of the exciting announcements last week for azure reduce eure to brute force attacks",NULL
+1034203800934920192,"hi guys still waiting do you have an update",NULL
+1034203933277794304,"hey is there any documentation on how node sites are supposed to work when deployed to app services i can t s",NULL
+1034237870427516928,"an easy way to improve performance is to enable automatic tuning query store and intelligent insights can help you identify quieries that need improvement",NULL
+1034271468782280704,"aztechhelp hi i m in evaluation period of azure and i can t connect to external ip of any service i have createad in my aks cluster is there any reason for this to happend on evaluation period thanks",NULL
+1034293834744647680,"hey team just wondering if increasing an address pool on a virtual network gateway point to site will cause any outages to connected app services 6 0 0 28 to 6 0 0 25",NULL
+1034295854813728768,"thank you",NULL
+1034302795342434304,"thanks mate here s a link to the post",NULL
+1034307275031113728,"catch up on some of the exciting announcements last week for azure reduce eure to brute force attacks",NULL
+1034312029010575361,"microsoft azure data welcomes attendees to vldb azure sql cosmosdb analytics cloud hdinsight follow",NULL
+1034326331968892928,"hi christopher can help you if you need assistance thanks",NULL
+1034347964670648320,"hey is it possible to unlock port for a vm of one of my customer thanks",NULL
+1034349158893867010,"i ll check thanks",NULL
+1034353289805160454,"also be aware that there is a restriction on port for payg subscriptions",NULL
+1034356979580522496,"aztechhelp i receeive an error trying to open azure ad i changed my personal ms id and i think i deleted the aad could someone help",NULL
+1034361239965761537,"i will make a new article because i cannot access anything in the aad admin center i receive the error access denied you do not have access",NULL
+1034363258956906496,thanks,NULL
+1034363840396443649,"hi i have one question about azure storage account if i deleted blob from container stored in azure storage then it will reduce my monthly cost",NULL
+1034367802088607745,"any word on when net core will be supported on app services",NULL
+1034373361193893888,"microsoft azure data welcomes attendees to vldb azure sql cosmosdb analytics cloud",NULL
+1034374158770233345,"hi do you know if there are plans to support moving managed disks between resource groups currently this doesn t appear to be supported",NULL
+1034376638602141696,"between gcc spam and my call history is filled with 91 numbers",NULL
+1034377548224851968,"i never imagined that gnu c compiler would resort to phone spam what is the world coming to",NULL
+1034378096323977216,"hi that s not really my use case though i want to move managed disks between two resource groups in the same subscription",NULL
+1034378943930032128,"yep thanks it s csp so it ll be good",NULL
+1034384936806047745,"thanks for that i ll have a bash i seem to remember this causes an issue with disk names though",NULL
+1034387757626523648,"ok thx",NULL
+1034393276235821056,"partner center is unaccessible accessing from india if that matters microsoft azure cps partnercenter",NULL
+1034397771170828288,"just circling back on this does appservice support active active gateways for p2s connections vnet integration",NULL
+1034401125938749441,"same here in germany csp is not accessible",NULL
+1034405600807989248,"if the page doesn t even open how you will gather this",NULL
+1034410804408283136,"thanks it worked",NULL
+1034419750301040641,"hey did you get anywhere with this we re seeing it too in a west europe app service it s breaking embedded devices that weren t eecting the change",NULL
+1034420378456743937,"nope running same code on iis or iis eress locally doesn t exhibit the same issue i have open case with but no solution yet",NULL
+1034420809153085440,"are there issues with uk south region as we can not create any sql servers or databases in this region",NULL
+1034423807048671232,"i have installed rds device cal licenses and rds session host on my azure virtual server ws2016 and licenses still not being issued to remote desktop users please help",NULL
+1034426607224713219,"no rd s session host has my licensing server activated and reports no issues multiple people login and work but no licenses are issued not sure if this is due to the grace period being active or if i have a real issue",NULL
+1034428834433654784,"this is now my second windows vm isntance i m trying to spin up in azure and also this one is completely unable to install any updates from windows update is there some known issue ongoing",NULL
+1034429959446687745,"everything is green on status page as usual no need to check that is the latest win7 image just broken all operations related to windows update just fail and this is fresh vm even this initial update via ie",NULL
+1034430884487864320,"and eventually after wu has searched for updates for minutes",NULL
+1034431351250997248,"our c app has trouble connecting to a client s domain in our app service main domain unable to read data from the transport connection an existing connection was forcibly closed by the remote host an alias on a different domain to the same ip works ideas",NULL
+1034433369491288064,"let me clarify it only happens when running on an azure web app get does not work on azure get does work on azure both url s connect to the same website and same ip both work in the same code locally not a code issue",NULL
+1034433526962249729,"are the app services maybe using some kind of domain blacklist that could cause the issue",NULL
+1034436551055429632,"thank you truly appreciate your quick responses",NULL
+1034437702849126400,"i m eeriencing issues with azure cdn for a storage account the endpoint for the cdn is returning an infinite redirect to a page",NULL
+1034438295885959169,"aztechhelp i can see my page but my database connection was down i needed restart for times this situation is the second time this happens logs is ok how i can to see what happen",NULL
+1034441068589318145,"are there issues with uk south region as we can not create any sql servers or databases in this region",NULL
+1034441085416886274,"we ll take a look for you now could you send us a quick dm with your subscription id",NULL
+1034441255672053761,"my page was up and sundelly the connection with my db stoped i restarted in my azure portal for times but my db continued down i saw the logs and i dont finded fails i need a technical analysis to find the fault because it s already the second time that this happens",NULL
+1034445274519953410,"eder com br brazil south",NULL
+1034447237106069505,"please send us your subscription id by direct message al",NULL
+1034447460209446918,"in central us did you have any outage or maintenance downtime for azure sql server from am to am est connections from our webapp to our azure sql instance were timeing out active connections on the sql server were at for the two hour window",NULL
+1034447800300396544,"i checked the documentation you provided to make sure i was using the system correctly it looks like i m not actually receiving a i m receiving a and then i am redirected to pages then pages infinitely",NULL
+1034453544974344196,"that doesn t help it looks like there s something wrong here azure is sending me a on a resource that exists and is configured for access",NULL
+1034454254822596613,"that s what i was trying to avoid the lengthy and frustrating process of submitting a ticket and talking to a level support engineer in india that gives you google links that are irrelevant",NULL
+1034458252984176642,"getting the cannot upgrade with existing functions message when trying to change a function app from to beta which requires creating a brand new function app we would like to keep the azure url name though",NULL
+1034470473508241408,"azhelp i currently have an azure sponsorship for a non profit that will eire soon 2nd year will i get a chance to apply again and if so when how",NULL
+1034477291898720257,"what shall be the reason for the alert status warning for cosmosdb classic alert setup i did got one alert initially but then it stopped working i didn t found any help of documentation kindly help me out support request would take forever to solve thus twitter",NULL
+1034479332960268290,"during creation of deep learning virtual machine i see none of the plans available in both east us and west us is it an error or there is none available i wanted ncv3 nd",NULL
+1034479909090013184,"thank you",NULL
+1034480514109861888,"alert status turns into warning for cosmos db classic alert rule i setup i m wondering what s the meaning of the warning status also how often the rule sends alert once it meets the metrics criteria",NULL
+1034481393802203137,"attached ss i m trying to create deep learning virtual machine dlvm the location chosen is east us both nd and ncv3 are available there nd ncv3 are azure gpu vm sizes",NULL
+1034488682726785025,"you d have to be stupid to use since they ll shut down your service to preemptively censor without any court order even though they re legally protected from liability",NULL
+1034490337451024386,"can go peacefully sunset itself",NULL
+1034490434704297986,"will actively censor you unless you happen to have political worldview within their acceptable spectrum say no to internet censorship say no to",NULL
+1034491248294252544,"guess i get the issue now thanks",NULL
+1034491290262667266,"yes your chief legal officer admits to willingness to disable services and censor despite no legal compunction to do so while falsely claiming that speech found legal in several supreme court cases decades ago is illegal",NULL
+1034492120181166080,"for background",NULL
+1034492912380334080,"how about censorship on gab",NULL
+1034492953451028482,"aztechhelp can i get support please",NULL
+1034498127062081536,"it hasnt even been a month and you forgot already",NULL
+1034503117491118080,"we have a case open too i ll let you know if we get any traction",NULL
+1034503580265443328,"ours is a west europe service as well will dm you if we get anywhere",NULL
+1034503969362599936,"have a look at sendgrid to send mails",NULL
+1034505142337503233,"for this",NULL
+1034507046350213121,"we tried and we can t azure need a subscription plan for send the incident is it necessary pay for a problem with your machines",NULL
+1034508275511947264,"any answer then",NULL
+1034509210137124864,"i suddenly am having tons of my cdn endpoints not being reachable and resetting their connection using the microsoft cdn preview in chrome if you go to a file on the cdn it returns err spdy protocol error i ve purged the cdn i ve done everything nothing helps",NULL
+1034510923891986432,"yes even different networks devices example cdn url origin url",NULL
+1034532917710610432,"not much of a response yet",NULL
+1034535857041039360,"you d have to be stupid to use since they ll shut dow",NULL
+1034543661781053440,"if you are having issues with your vm you should create an sr case they will provide you with a number to",NULL
+1034543697436860417,"could you direct message us your sub id do",NULL
+1034543739908317185,"contact number for what do",NULL
+1034552348041871361,"azhelp i m using a three layer architecture that includes azure iot hub iot edge gateway and a downstream device containing device sdk i want to send messages from gateway to downstream device containing sdk kindly help me with the same",NULL
+1034553811912675328,"sure take your time and please share the relevant articles or tutorials",NULL
+1034555003321688064,"aztechhelp i need help on changing my app service plan from medium to small and merging two web apps from different resource groups",NULL
+1034556341476454400,"i am able to create a transparent gateway and is able to send telemetry from downstream device to edge gateway now i want to send telemetry from gateway to downstream device",NULL
+1034557753845403648,"straight from the azure marketplace",NULL
+1034558947829510144,"mins old check it out in the marketplace",NULL
+1034562263196127232,"if you want core specifics the build that is currently in the marketplace is 666 i specifically am requiring build 7704 1000 or later so that it aligns with the windows insider docker images there is no windows insider docker image earlier than 7704",NULL
+1034563446166224897,"tuesazure reduce your eure to brute force attacks from the virtual machine blade",NULL
+1034563696742346753,"tuesazure ai to transform a handwritten user interface design from a picture to a valid html markup code sketch2code",NULL
+1034564097960894464,"can you be more specific about what additional details you re requesting there is already a lot of details in the thread",NULL
+1034566694092591105,"is it possible to backup on premises vmware workstation vms using azure backup",NULL
+1034567958855598081,"thanks this means no vmware workstation support right now",NULL
+1034569857206038533,"thanks done",NULL
+1034576041782599680,"if only there was a windows server marketplace image that would support it you only have v10 0 7666 there at the moment",NULL
+1034577991181824001,"thx will the marketplace image be updated too so that a new azure windows server vm later than 666 can be deployed",NULL
+1034587596029079552,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034587880709136385,"it took me more than hours but i have successfully customized my first runbook script time to sleep",NULL
+1034607528611651585,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034612464581844993,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034627158059053057,"please tell me the contents of qna maker s frequently asked questions of japan cognitive services support blog e it is not listed on the link of active learning and test and training document described in answer of q3 tell me the correct link",NULL
+1034628025508409344,"check my recent dm",NULL
+1034628343017218048,"interested in new azure services azure file sync is now generally available listen to this episode to learn more htt",NULL
+1034628939325435904,"is azure file share still using smb as its primary connection",NULL
+1034629678814744576,"thanks for the reply",NULL
+1034631592445128705,"really love to work with you guys",NULL
+1034639427581161473,"aztechhelp hi i m trying to perform multi factor authentication however in my azure portal i do not see this option will he be disabled for me",NULL
+1034641467724259328,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034645611512057856,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034655981089648640,"azcommunity trying to set up free azure day account but being told i m not eligible for a free account",NULL
+1034668771510607873,"do you know why i would not be able to do an ert with mysql work bench from an azure database for mysql i ve tried multiple versions of mysql work bench",NULL
+1034677844318801920,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034679988836950016,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034680072064524288,"hey folks no response as yet should i raise this through a different method",NULL
+1034681680106323971,"i can recommend the o365 support line available through the portal they could help me in a similar case move partner subscription to another tenant but i had no vm",NULL
+1034685145310289922,"hi there we apologize for the delay there seemed to be an issue in our tooling and we missed your tweet this docu",NULL
+1034685673867948032,"i m just doing the stock stars are ert of a database from mysql work bench i cannot make changes to the sql as the sql is being done by mysql workbench i ve somebody this before but not it doesn t work",NULL
+1034701958513414144,"interested in new azure services azure file sync is now generally available listen to this episode to learn more htt",NULL
+1034704639105462272,"yes sorry for typos on my phone",NULL
+1034707950626123777,"interested in new azure services azure file sync is now generally available listen to this episode to learn more htt",NULL
+1034708100345987072,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034711168198365184,"oms is a licensing suite that we are phasing out while the pr",NULL
+1034716121503477760,"this is what happens when i try a transfer i m pretty sure it s because of my account linked to my partner profile is linked to the subscription so it fails to transfer because the account on the new tenant isn t a partner account",NULL
+1034716391507722240,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034716433442197504,"might try that worse case is i ll just back up the vm delete the whole tenant reconfigure all my partner profile addresses and then start fresh on the new tenant i did want to test the transfer process though",NULL
+1034723805363679232,"azurehowto learn how to map an existing custom dns name to azure see how you can also map subdomains root and wild",NULL
+1034725799461625856,"if a connection resource is stuck on deleting and a local network gateway is stuck on updating will either of the two run into a timeout some day azure",NULL
+1034736028018532352,"interested in new azure services azure file sync is now generally available listen to this episode to learn more htt",NULL
+1034736668207529984,"will do thanks",NULL
+1034742590028042240,"hey i had a arm template deployment hang for minutes restarted it and it hanged for mins and then restarted it and it worked is there a good way to report this to the team",NULL
+1034745905222545408,"i am not able to connect to windows vm it is saying internal error occurred when i remote connect to the vm aztechhelp",NULL
+1034753129718448129,"aztechhelp how do i instantiate an gpu enabled nv6 windows virtual machine on azure",NULL
+1034758576609349632,"i have already looked at it nv6 instance is not listed there to select in size options",NULL
+1034763285143400449,"thanks alot",NULL
+1034764296025190400,"hi i m trying to remove identify all market place resources in our subscription ie not billed through msft any idea how i can find it",NULL
+1034773151450890242,"west europe bus timouts since minutes what s going on",NULL
+1034775061071319040,"am i the only one with issues deploying solutions to fresh log analytics workspaces in weu not found and undefined code notfound everywhere",NULL
+1034782507340849153,"aztechhelp when i try to delete an ssl certificate i get the error the api version query parameter api version is required for all requests is there any workaround for this",2
+1034799383697604614,"aztechhelp i got an issue creating a logic app create container group selecting the needed subsriptionid i get the following message could not retrieve values the access token is from the wrong issuer how can i solve this thank you",2
+1034800341928169472,"but still cannot figure out how to ert out the configurations for my existing apis policies etc a git pull on my apim repository fetched nothing nor can i see any options to ert on the portal please haaalp",3
+1034802045218304002,"thanks for the quick reply taking a look",0
+1034810695974572032,"azcommunity hi all the company i work for offers a quantitative analytics database that requires a vm with the following os sql instance 8 cores 64 gb ram at least 000 iops and anywhere from to tb database storage",3
+1034810886018490369,"azcommunity depending on database subscriptions sizes these instances need to be none managed equivalent of amazon ec2 instances where we can download a flat database and attach it via mssql and install applications to update and monitor the database",3
+1034811056265330690,"azcommunity externally can you provide me with the specific documentation and a technical breakdown of what you offer in this capacity your current calculators are somewhat vague and push for managed instances which don t work with our flat database dump and we",2
+1034811200809390081,"azcommunity do require database access with is not permitted via your managed service i can be reached via mohamed satttaur com",3
+1034816885647466496,"problem deploying simplygon cloud deployment twice this morning first occurrence was site extension not found east us nd was blob auditing already enabled west us dm",2
+1034828025555312640,"azure portal is excruciatingly slow today particularly for anything around service bus resources in east us is there an outage slowdown",2
+1034828055481602048,"aztechhelp i set up a azure data factory ssis ir that created a ssisdb catalog in my database i have deployed packages if i schedule through ssms i get an error saying failed to verify integration runtime the catalog does not belong to the integration runtime",2
+1034830120488513542,"aztechhelp i have two azure active directory group i want to secure a sql db rows to these two ad group based on values from a column if this column contains let s say sales only authorized user from sales aad group can access thanks for the help",3
+1034830236662214657,"here it is thank you",0
+1034830325048913922,"hi it s been very slow the past 3 hours since i started work this morning no recent changes am working in a service bus namespace i created two days ago portal performing reasonably past two days only very slow this morning no internet issues on my end",2
+1034830572047220737,"aztechhelp i can t connect with my app when i am in usa it s works only in brasil could you help me please i think it is a dns problem",2
+1034831790714707968,"the subscription management portal for was miserably slow years ago in its youth working with it again it is still unbelievably slow and reflects poorly on the cloud services against which it is speculatively built",2
+1034832036756955137,"thank you again for your quick response",0
+1034832754234597377,"aztechhelp can t connect to my vm on port vm seems healthy",2
+1034834392575700992,"yes to both questions",3
+1034840750544932865,"dm ing now",3
+1034842528699297797,"azhelp why for deep learning vms on east us nd instances are not available",2
+1034851803072946177,"no been trying to run updates for over a month",3
+1034854500006350848,"hey i would like to get cost information about the sql server always on template azurecalculator azure",2
+1034858605219115009,"and the worst problem of all i wasn t able to properly report either of those from mobile was trying to be helpful and send me to the appropriate places but they all have a completely broken ux on mobile",2
+1034859847550943238,"the message is err connection refused",2
+1034862892485464064,"hi do you want let s encrypt support elicitly or do you want free easy to setup and maintain or is it something else",2
+1034868519761076225,"done thanks for your prompt response",0
+1034871133517094912,"conditional access w require compliant device seems to not work with mobile browsers only mobile apps client app settings untouched anyone eerience this",2
+1034875175836299271,"trying to sign up for the free test version of your azure services but it seems that the page is not available are there any known issues about it",2
+1034876030706745345,"hi i tried all the alternatives described on the site and it still did not work could you help me please",2
+1034876054756909057,"the free trial it is basically stuck at loading the credit card information prompt i am on the german page though not sure if this makes any difference",2
+1034878076033925121,"for me it s easy now to bring and manage my own cert but i would be nice to see let s encrypt support",2
+1034878142282903552,"disabled any adblock scriptblocking in chrome but the prompt does not show up for me only the loading dots animation",2
+1034879085313441792,"switch browsers worked signing up via edge now thanks for the hint",0
+1034884495260966912,"can one use cli to stop classic vms i don t see any documentation on this",2
+1034885787970613252,"hi do you have any update do i need to wait for some more time",2
+1034887506322501633,"nope just windows only",3
+1034892616880594946,"unable to set a custom dns to ilb ase tried so many ways there is a big disconnect about the subject we are about to fail in this project here is the detailed question",2
+1034892809139101696,"azure custom dns setup is not reliable check this out we are about to fail the project",2
+1034894613952253952,"i have also created a ticket on github for that documentation please check",2
+1034897284247572486,"could not contact the product teams if we cant setup the custom dns on the ilb ase with our network we need to know this i have also send a message to we are running out of time",2
+1034898276061986817,"time is not unlimited we need an offical answer please check the reddit and how many ways we are trying this",2
+1034898420027334657,"aztechhelp is there some list to find out where i can provision with an msdn subscription i am trying to set up a terraform demo",3
+1034901839542710278,"is there any problem with storage account in east west us region i m seeing errors from azure portal and from azure storage elorer",2
+1034907761472163845,"thanks i read related docs from microsoft what i need is to create rls based on values from a column and to give different aad group members with different access aad group member are not stored within azure sql db which is different from the method in the link you send",3
+1034912619398922242,"yes and no is there any difference also want to give users the ability to use client tools like ssms to directly query data in sql db",2

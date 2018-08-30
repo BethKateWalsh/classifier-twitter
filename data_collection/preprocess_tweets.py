@@ -1,8 +1,6 @@
 import pymysql.cursors
-from textblob.classifiers import NaiveBayesClassifier
 import nltk
 import re
-from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.tokenize import sent_tokenize, word_tokenize
 import preprocessor as p
@@ -13,7 +11,6 @@ dbUser = "root"
 dbPassword = "woodycool123"
 dbName = "azure_support_tweets"
 cusrorType = pymysql.cursors.DictCursor
-
 connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPassword, db=dbName, charset='utf8mb4', cursorclass=cusrorType)
 
 
@@ -49,15 +46,15 @@ try:
         tokenized_tweet = word_tokenize(text_tweet)
 
         # Stemming (Stop it removing the from words!)
-        stemmed_tweet_words = []
-        for tweet in tokenized_tweet:
-            if tweet.endswith("e"):
-                stemmed_tweet_words.append(wnl.lemmatize(tweet))
-            else:
-                stemmed_tweet_words.append(porter.stem(tweet))
+        # stemmed_tweet_words = []
+        # for tweet in tokenized_tweet:
+        #     if tweet.endswith("e"):
+        #         stemmed_tweet_words.append(wnl.lemmatize(tweet))
+        #     else:
+        #         stemmed_tweet_words.append(porter.stem(tweet))
 
         # Put string back together
-        text_tweet = " ".join(stemmed_tweet_words)
+        # text_tweet = " ".join(stemmed_tweet_words)
 
         # Remove hashtags but keep the words and special characters
         text_tweet = text_tweet.replace("#", "")
