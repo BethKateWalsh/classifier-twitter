@@ -1,20 +1,16 @@
 import nltk
+import numpy as np
 import random
 import pymysql
-from nltk.tokenize import word_tokenize
-from sklearn import naive_baye
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_selection import chi2
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.model_selection import train_test_split
 
-# main_category codes
-# rating = 0
-# user experience = 1
-# requirement = 2
-# community = 3
-
-
-# Lists :-)
-train_data = []
-test_data = []
-
+corpus = []
+labels = []
 
 # Get tweets from MYSQL database
 dbServerName = "localhost"
@@ -28,17 +24,11 @@ connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPa
 try:
     cursorObject = connectionObject.cursor()
     cursorObject.execute("SELECT text_tweet, main_category FROM preprocessed_tweets")
-    for i in cursorObject.fetchall()[:20]:
+    for i in cursorObject.fetchall()[:30]:
 
         # Create a tuple list from tweets and categories
-        tuple = (i["text_tweet"], i["main_category"])
-        train_data.append(tuple)
-
-    for i in cursorObject.fetchall()[20:]:
-
-        # Create a tuple list from tweets and categories
-        tuple = (i["text_tweet"])
-        test_data.append(tuple)
+        corpus.append(i["text_tweet"])
+        labels.append(i["main_category"])
 
 except Exception as e:
     print("Exeception occured:{}".format(e))
@@ -46,10 +36,24 @@ except Exception as e:
 finally:
     connectionObject.close()
 
-# Setup classifier
-clfrnb = naive_bayes.MultinomialNB()
-clfrnb.fit(train_data, train_labels)
-predicted_labels = clfrNB.predict(test_data)
+# rating = 0
+# user experience = 1
+# requirement = 2
+# community = 3
 
-for i in predicted_labels:
-    print(i)
+# Term Frequency Inverse Document Frequency
+tfidf = TfidfVectorizer(sublinear_tf=True, min_df=5, norm='l2', encoding='latin-1', ngram_range=(1, 2), stop_words='english')
+features = tfidf.fit_transform(corpus)
+idf = tfidf.idf_
+features.shape
+# print(dict(zip(tfidf.get_feature_names(), idf)))
+
+# Fit the training set
+X_train, X_test, y_train, y_test = train_test_split(corpus, labels, random_state = 0)
+count_vect = CountVectorizer()
+X_train_counts = count_vect.fit_transform(X_train)
+tfidf_transformer = TfidfTransformer()
+X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
+clf = MultinomialNB().fit(X_train_tfidf, y_train)
+
+print(clf.predict(count_vect.transform(["Azure Community Support. I''m trying to find out about something, I''m trying to install office 365 on…"])))

@@ -1,6 +1,7 @@
 import pymysql.cursors
 import nltk
 import re
+from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.tokenize import sent_tokenize, word_tokenize
 import preprocessor as p
@@ -24,16 +25,17 @@ try:
     cursorObject = connectionObject.cursor()
 
     # Create new table for processed tweets IF DOSE NOT ALREADY EXSIST
-    sqlQuery = "CREATE TABLE IF NOT EXISTS preprocessed_tweets(id_tweet varchar(200), text_tweet text)"
+    sqlQuery = "CREATE TABLE IF NOT EXISTS preprocessed_tweets(id_tweet varchar(200), text_tweet text, main_category varchar(20))"
 
     # Execute the sqlQuery
     cursorObject.execute(sqlQuery)
 
     # Select id_tweet
-    cursorObject.execute("SELECT id_tweet, text_tweet FROM raw_tweets")
+    cursorObject.execute("SELECT id_tweet, text_tweet, main_category FROM raw_tweets")
     for i in cursorObject.fetchall():
         id_tweet = i["id_tweet"];
         text_tweet = i["text_tweet"];
+        label_main = i["main_category"];
 
         # tweet-preprocessor library
         p.set_options(p.OPT.URL, p.OPT.EMOJI, p.OPT.MENTION, p.OPT.RESERVED, p.OPT.SMILEY, p.OPT.NUMBER)
@@ -45,16 +47,20 @@ try:
         # Tokenize
         tokenized_tweet = word_tokenize(text_tweet)
 
-        # Stemming (Stop it removing the from words!)
-        # stemmed_tweet_words = []
-        # for tweet in tokenized_tweet:
-        #     if tweet.endswith("e"):
-        #         stemmed_tweet_words.append(wnl.lemmatize(tweet))
-        #     else:
-        #         stemmed_tweet_words.append(porter.stem(tweet))
+        # Remove the stopwords
+        filtered_words = [word for word in tokenized_tweet if word not in stopwords.words('english')]
+        tokenized_tweet = filtered_words
+
+        # Stemming (Stop it removing the from words!)
+        stemmed_tweet_words = []
+        for tweet in tokenized_tweet:
+             if tweet.endswith("e"):
+                 stemmed_tweet_words.append(wnl.lemmatize(tweet))
+             else:
+                 stemmed_tweet_words.append(porter.stem(tweet))
 
         # Put string back together
-        # text_tweet = " ".join(stemmed_tweet_words)
+        text_tweet = " ".join(stemmed_tweet_words)
 
         # Remove hashtags but keep the words and special characters
         text_tweet = text_tweet.replace("#", "")
@@ -64,8 +70,8 @@ try:
         text_tweet = ' '.join(text_tweet.split())
 
         # Add tweet text and id to table
-        addrowQuery = 'INSERT INTO preprocessed_tweets (id_tweet, text_tweet) VALUES (%s, %s);'
-        cursorObject.execute(addrowQuery, (id_tweet, text_tweet))
+        addrowQuery = 'INSERT INTO preprocessed_tweets (id_tweet, text_tweet, main_category) VALUES (%s, %s, %s);'
+        cursorObject.execute(addrowQuery, (id_tweet, text_tweet, label_main))
         connectionObject.commit()
 
 except Exception as e:
