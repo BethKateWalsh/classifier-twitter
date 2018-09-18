@@ -8,7 +8,7 @@ import datetime
 import pymysql.cursors
 
 # Only get tweets from this data on
-lastDate = datetime.datetime(2018, 8, 29, 21, 16, 19)
+lastDate = datetime.datetime(2018, 9, 9, 19, 3, 51)
 
 
 # Connect to Twitter API
@@ -61,7 +61,7 @@ try:
     # Add a row for each tweet
     # Add to filter by last date downloaded "and tweet.created_at > lastDate"
     for tweet in searched_tweets:
-        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en" and ('RT @' not in tweet.full_text)):
+        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en" and ('RT @' not in tweet.full_text) and tweet.created_at > lastDate):
             # Assign values to variables
             id_tweet = tweet.id
             text_tweet = tweet.full_text
