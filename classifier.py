@@ -1,10 +1,14 @@
 import sqlalchemy
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import chi2
+from sklearn.model_selection import train_test_split
 import numpy as np
 from io import StringIO
+from sklearn.naive_bayes import MultinomialNB
 
 
 # Get tweets from MYSQL database
@@ -45,19 +49,30 @@ print(data.shape)
 
 
 # Text in Numerical Features :)
-tfidf = TfidfVectorizer(sublinear_tf=True, min_df=4, norm='l2', encoding='latin-1', ngram_range=(1, 2), stop_words='english')
+tfidf = TfidfVectorizer(sublinear_tf=True, min_df=5, norm='l2', encoding='latin-1', ngram_range=(1, 2), stop_words='english')
 features = tfidf.fit_transform(data.text_tweet).toarray()
 labels = data.main_category
 print(features.shape)
 
 
-N = 2
-for label, main_category in sorted(category_to_id.items()):
-  features_chi2 = chi2(features, labels == main_category)
-  indices = np.argsort(features_chi2[0])
-  feature_names = np.array(tfidf.get_feature_names())[indices]
-  unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
-  bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
-  print("# '{}':".format(label))
-  print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
-  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
+# Display top features
+# N = 2
+# for label, main_category in sorted(category_to_id.items()):
+#   features_chi2 = chi2(features, labels == main_category)
+#   indices = np.argsort(features_chi2[0])
+#   feature_names = np.array(tfidf.get_feature_names())[indices]
+#   unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
+#   bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
+#   print("# '{}':".format(label))
+#   print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
+#   print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
+
+
+X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 0)
+count_vect = CountVectorizer()
+X_train_counts = count_vect.fit_transform(X_train)
+tfidf_transformer = TfidfTransformer()
+X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
+clf = MultinomialNB().fit(X_train_tfidf, y_train)
+
+print(clf.predict(count_vect.transform(["@AzureSupport TRACKING ID: DDP8-1SG. The issue has not been solved yet! We  are still receiving 'Internal error occured in processing network profile of the VM' - Failed to resize virtual machine. West Europe."])))

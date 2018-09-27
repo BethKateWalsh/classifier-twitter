@@ -50,6 +50,10 @@ try:
         # Contractions
         text_tweet = contractions.fix(text_tweet)
 
+        # Remove hashtags but keep the words and special characters
+        text_tweet = text_tweet.replace("#", "")
+        text_tweet = re.sub(r'([^\s\w]|_)+', ' ', text_tweet)
+
         # Tokenize
         tokenized_tweet = word_tokenize(text_tweet)
 
@@ -60,17 +64,13 @@ try:
         # Stemming (Stop it removing the from words!)
         stemmed_tweet_words = []
         for tweet in tokenized_tweet:
-             if tweet.endswith("e"):
-                 stemmed_tweet_words.append(wnl.lemmatize(tweet))
-             else:
-                 stemmed_tweet_words.append(porter.stem(tweet))
+             # if tweet.endswith("e"):
+                 # stemmed_tweet_words.append(wnl.lemmatize(tweet))
+             # else:
+             stemmed_tweet_words.append(porter.stem(tweet))
 
         # Put string back together
         text_tweet = " ".join(stemmed_tweet_words)
-
-        # Remove hashtags but keep the words and special characters
-        text_tweet = text_tweet.replace("#", "")
-        text_tweet = re.sub(r'([^\s\w]|_)+', ' ', text_tweet)
 
         # Remove multiple spaces
         text_tweet = ' '.join(text_tweet.split())
