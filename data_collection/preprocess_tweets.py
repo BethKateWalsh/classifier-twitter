@@ -5,6 +5,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.tokenize import sent_tokenize, word_tokenize
 import preprocessor as p
+import re
+import contractions
 
 # Connect to MYSQL database
 dbServerName = "localhost"
@@ -19,6 +21,7 @@ connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPa
 porter = PorterStemmer()
 wnl = WordNetLemmatizer()
 
+
 # Get tweets from raw_tweets and process
 try:
     # Create a cursor object
@@ -32,7 +35,7 @@ try:
 
     # Select id_tweet
     cursorObject.execute("SELECT id_tweet, text_tweet, main_category FROM raw_tweets")
-    for i in cursorObject.fetchall():
+    for i in cursorObject.fetchall()[:1500]:
         id_tweet = i["id_tweet"];
         text_tweet = i["text_tweet"];
         label_main = i["main_category"];
@@ -43,6 +46,9 @@ try:
 
         # Case folding
         text_tweet = text_tweet.casefold()
+
+        # Contractions
+        text_tweet = contractions.fix(text_tweet)
 
         # Tokenize
         tokenized_tweet = word_tokenize(text_tweet)

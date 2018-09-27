@@ -2,13 +2,13 @@ from twitter_api import ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECR
 
 
 #import modules
-from pymongo import MongoClient
 import tweepy
 import datetime
 import pymysql.cursors
 
+
 # Only get tweets from this data on
-lastDate = datetime.datetime(2018, 9, 9, 19, 3, 51)
+lastDate = datetime.datetime(2018, 9, 19, 21, 57, 15)
 
 
 # Connect to Twitter API
@@ -36,7 +36,7 @@ max_tweets = 1000
 while len(searched_tweets) < max_tweets:
     count = max_tweets - len(searched_tweets)
     try:
-        new_tweets = api.search(q=searchQuery, tweet_mode='extended', count=100, max_id=str(last_id - 1))
+        new_tweets = api.search(q=searchQuery, tweet_mode='extended', count=1000, max_id=str(last_id - 1))
         if not new_tweets:
             break
         searched_tweets.extend(new_tweets)
