@@ -35,7 +35,7 @@ try:
 
     # Select id_tweet
     cursorObject.execute("SELECT id_tweet, text_tweet, main_category FROM raw_tweets")
-    for i in cursorObject.fetchall()[:1500]:
+    for i in cursorObject.fetchall()[:1504]:
         id_tweet = i["id_tweet"];
         text_tweet = i["text_tweet"];
         label_main = i["main_category"];
