@@ -27,7 +27,6 @@ labels_data = {'01':'praise','012':'promise','015':'dispraise','12':'helpfulness
 list_of_labels = []
 # Add the key it matches in the dictionary
 for index, row in data.iterrows():
-    # list_of_labels.append
     c = str(row["main_category"])
     list_of_labels.append(labels_data[c])
 labels_df = pd.DataFrame(list_of_labels,columns=['label'])
@@ -43,8 +42,7 @@ category_to_id = dict(category_id_df.values)
 id_to_category = dict(category_id_df[['main_category', 'label']].values)
 
 
-# Display numbers of each category
-# fig = plt.figure(figsize=(8,6))
+# Display numbers of each category # fig = plt.figure(figsize=(8,6))
 # data.groupby('label').text_tweet.count().plot.bar()
 # plt.show()
 
@@ -63,9 +61,9 @@ for label, main_category in sorted(category_to_id.items()):
   feature_names = np.array(tfidf.get_feature_names())[indices]
   unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
   bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
-#  print("# '{}':".format(label))
-#  print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
-#  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
+  print("# '{}':".format(label))
+  print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
+  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
 
 
 X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 0, test_size=0.25)

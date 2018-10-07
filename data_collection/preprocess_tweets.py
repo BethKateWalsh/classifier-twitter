@@ -8,6 +8,10 @@ import preprocessor as p
 import re
 import contractions
 
+# Word to not stem
+not_stem_words = ['aws', 'amazon', 'dockerhub', 'googlechrome', 'tradelize', 'xbox', 'vsts']
+remove_words = ['azure', 'azuresupport']
+
 # Connect to MYSQL database
 dbServerName = "localhost"
 dbUser = "root"
@@ -35,7 +39,7 @@ try:
 
     # Select id_tweet
     cursorObject.execute("SELECT id_tweet, text_tweet, main_category FROM raw_tweets")
-    for i in cursorObject.fetchall()[:1504]:
+    for i in cursorObject.fetchall()[:2000]:
         id_tweet = i["id_tweet"];
         text_tweet = i["text_tweet"];
         label_main = i["main_category"];
@@ -64,10 +68,12 @@ try:
         # Stemming (Stop it removing the from words!)
         stemmed_tweet_words = []
         for tweet in tokenized_tweet:
-             # if tweet.endswith("e"):
-                 # stemmed_tweet_words.append(wnl.lemmatize(tweet))
-             # else:
-             stemmed_tweet_words.append(porter.stem(tweet))
+            if tweet in not_stem_words:
+                stemmed_tweet_words.append(tweet)
+            elif tweet in remove_words:
+                pass
+            else:
+                stemmed_tweet_words.append(porter.stem(tweet))
 
         # Put string back together
         text_tweet = " ".join(stemmed_tweet_words)

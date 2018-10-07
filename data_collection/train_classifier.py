@@ -22,7 +22,7 @@ connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPa
 try:
     cursorObject = connectionObject.cursor()
     cursorObject.execute("SELECT text_tweet, main_category FROM preprocessed_tweets")
-    for i in cursorObject.fetchall()[:1500]:
+    for i in cursorObject.fetchall()[:2000]:
 
         # Create a numpy array
         sub_corpus = np.array((i["text_tweet"]), (i["main_category"]))
