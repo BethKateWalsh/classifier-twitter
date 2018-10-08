@@ -9,7 +9,7 @@ import re
 import contractions
 
 # Word to not stem
-not_stem_words = ['aws', 'amazon', 'dockerhub', 'googlechrome', 'tradelize', 'xbox', 'vsts']
+not_stem_words = ['aws', 'amazon', 'dockerhub', 'googlechrome', 'tradelize', 'xbox', 'vsts', 'docker', 'lucidchart', 'facebook', 'bing', 'cloudflare', 'argo', 'safari', 'office365', 'twitter']
 remove_words = ['azure', 'azuresupport']
 
 # Connect to MYSQL database
@@ -39,7 +39,7 @@ try:
 
     # Select id_tweet
     cursorObject.execute("SELECT id_tweet, text_tweet, main_category FROM raw_tweets")
-    for i in cursorObject.fetchall()[:2000]:
+    for i in cursorObject.fetchall()[:2600]:
         id_tweet = i["id_tweet"];
         text_tweet = i["text_tweet"];
         label_main = i["main_category"];
