@@ -67,7 +67,7 @@ for label, main_category in sorted(category_to_id.items()):
   print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
 
 
-X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 0, test_size=0.25)
+X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 42, test_size=0.25)
 count_vect = CountVectorizer()
 X_train_counts = count_vect.fit_transform(X_train)
 tfidf_transformer = TfidfTransformer()
