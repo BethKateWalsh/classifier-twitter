@@ -8,7 +8,7 @@ import pymysql.cursors
 
 
 # Only get tweets from this data on
-lastDate = datetime.datetime(2018, 9, 24, 13, 14, 25)
+lastDate = datetime.datetime(2018, 10, 12, 16, 13, 41)
 
 
 # Connect to Twitter API
@@ -31,12 +31,12 @@ connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPa
 searchQuery = "@azuresupport"
 searched_tweets = []
 last_id = -1
-max_tweets = 222
+max_tweets = 66
 
 while len(searched_tweets) < max_tweets:
     count = max_tweets - len(searched_tweets)
     try:
-        new_tweets = api.search(q=searchQuery, tweet_mode='extended', count=222, max_id=str(last_id - 1))
+        new_tweets = api.search(q=searchQuery, tweet_mode='extended', count=66, max_id=str(last_id - 1))
         if not new_tweets:
             break
         searched_tweets.extend(new_tweets)

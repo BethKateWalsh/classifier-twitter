@@ -42,9 +42,10 @@ category_to_id = dict(category_id_df.values)
 id_to_category = dict(category_id_df[['main_category', 'label']].values)
 
 
-# Display numbers of each category # fig = plt.figure(figsize=(8,6))
-# data.groupby('label').text_tweet.count().plot.bar()
-# plt.show()
+# Display numbers of each category
+fig = plt.figure(figsize=(8,6))
+data.groupby('label').text_tweet.count().plot.bar()
+plt.show()
 
 
 # Text in Numerical Features :)
