@@ -43,9 +43,9 @@ id_to_category = dict(category_id_df[['main_category', 'label']].values)
 
 
 # Display numbers of each category
-fig = plt.figure(figsize=(8,6))
-data.groupby('label').text_tweet.count().plot.bar()
-plt.show()
+# fig = plt.figure(figsize=(8,6))
+# data.groupby('label').text_tweet.count().plot.bar()
+# plt.show()
 
 
 # Text in Numerical Features :)
@@ -57,14 +57,14 @@ labels = data.main_category
 # Display top features
 N = 2
 for label, main_category in sorted(category_to_id.items()):
-  features_chi2 = chi2(features, labels == main_category)
-  indices = np.argsort(features_chi2[0])
-  feature_names = np.array(tfidf.get_feature_names())[indices]
-  unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
-  bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
-  print("# '{}':".format(label))
-  print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
-  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
+ features_chi2 = chi2(features, labels == main_category)
+ indices = np.argsort(features_chi2[0])
+ feature_names = np.array(tfidf.get_feature_names())[indices]
+ unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
+ bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
+ print("# '{}':".format(label))
+ print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
+ print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
 
 
 X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 42, test_size=0.25)
