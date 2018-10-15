@@ -8,9 +8,8 @@ from sklearn.feature_selection import chi2
 from sklearn.model_selection import train_test_split
 import numpy as np
 from io import StringIO
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
-from sklearn import metrics
 
 
 # Get tweets from MYSQL database
@@ -73,9 +72,6 @@ count_vect = CountVectorizer()
 X_train_counts = count_vect.fit_transform(X_train)
 tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
-clf = MultinomialNB().fit(X_train_tfidf, y_train)
+clf = GaussianNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
-# print(accuracy_score(pred, y_test))
-# print(clf)
-# print(metrics.classification_report(pred, y_test))
-print(y_test.value_counts().head(1)/len(y_test))
+print(accuracy_score(pred, y_test))

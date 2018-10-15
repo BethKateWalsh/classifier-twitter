@@ -10,6 +10,7 @@ import numpy as np
 from io import StringIO
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.metrics import accuracy_score
+from sklearn import metrics
 
 
 # Get tweets from MYSQL database
@@ -75,3 +76,4 @@ X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
 clf = BernoulliNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
 print(accuracy_score(pred, y_test))
+print(metrics.classification_report(pred, y_test))
