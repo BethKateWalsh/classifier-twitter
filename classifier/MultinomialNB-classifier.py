@@ -78,4 +78,7 @@ pred = clf.predict(count_vect.transform(X_test))
 # print(accuracy_score(pred, y_test))
 # print(clf)
 # print(metrics.classification_report(pred, y_test))
-print(y_test.value_counts().head(1)/len(y_test))
+
+# Print the null accuracy
+# print(y_test.value_counts().head(1)/len(y_test))
+print(metrics.confusion_matrix(y_test, pred))
