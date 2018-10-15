@@ -8,7 +8,7 @@ from sklearn.feature_selection import chi2
 from sklearn.model_selection import train_test_split
 import numpy as np
 from io import StringIO
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import BernoulliNB
 from sklearn.metrics import accuracy_score
 
 
@@ -55,16 +55,16 @@ labels = data.main_category
 
 
 # Display top features
-N = 2
-for label, main_category in sorted(category_to_id.items()):
- features_chi2 = chi2(features, labels == main_category)
- indices = np.argsort(features_chi2[0])
- feature_names = np.array(tfidf.get_feature_names())[indices]
- unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
- bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
- print("# '{}':".format(label))
- print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
- print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
+# N = 2
+# for label, main_category in sorted(category_to_id.items()):
+#  features_chi2 = chi2(features, labels == main_category)
+#  indices = np.argsort(features_chi2[0])
+#  feature_names = np.array(tfidf.get_feature_names())[indices]
+#  unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
+#  bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
+#  print("# '{}':".format(label))
+#  print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
+#  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
 
 
 X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 42, test_size=0.25)
@@ -72,6 +72,6 @@ count_vect = CountVectorizer()
 X_train_counts = count_vect.fit_transform(X_train)
 tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
-clf = MultinomialNB().fit(X_train_tfidf, y_train)
+clf = BernoulliNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
 print(accuracy_score(pred, y_test))
