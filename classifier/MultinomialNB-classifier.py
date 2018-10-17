@@ -81,4 +81,4 @@ print(accuracy_score(pred, y_test))
 
 # Print the null accuracy
 # print(y_test.value_counts().head(1)/len(y_test))
-# print(metrics.confusion_matrix(y_test, pred))
+print(metrics.confusion_matrix(y_test, pred))

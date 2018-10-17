@@ -1,21 +1,16 @@
 from twitter_api import ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECRET
-
-
 #import modules
 import tweepy
 import datetime
 import pymysql.cursors
 
-
 # Only get tweets from this data on
 lastDate = datetime.datetime(2018, 10, 12, 16, 13, 41)
-
 
 # Connect to Twitter API
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth)
-
 
 # Connect to MYSQL database
 dbServerName = "localhost"
@@ -23,9 +18,7 @@ dbUser = "root"
 dbPassword = "woodycool123"
 dbName = "azure_support_tweets"
 cusrorType = pymysql.cursors.DictCursor
-
 connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPassword, db=dbName, charset='utf8mb4', cursorclass=cusrorType)
-
 
 #Get 1000 tweets
 searchQuery = "@azuresupport"
@@ -45,7 +38,6 @@ while len(searched_tweets) < max_tweets:
         # depending on TweepError.code, one may want to retry or wait
         # to keep things simple, we will give up on an error
         break
-
 
 # Create table for raw tweets if there is none
 try:

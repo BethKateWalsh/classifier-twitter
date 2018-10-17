@@ -1,5 +1,6 @@
 import sqlalchemy
 import pandas as pd
+import pickle
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -74,5 +75,10 @@ clf = BernoulliNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
 print(accuracy_score(y_test, pred))
 # print(metrics.classification_report(pred, y_test))
-# print(metrics.confusion_matrix(y_test, pred))
+print(metrics.confusion_matrix(y_test, pred))
 # print(clf.predict(count_vect.transform(["@azuresupport - I hope you all had a tall frosty one once this was fixed.  Yesterday could not have been a good day."])))
+
+
+# Save model
+filename = 'bernoullinb_model.sav'
+pickle.dump(clf, open(filename, 'wb'))
