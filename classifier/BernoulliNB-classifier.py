@@ -19,7 +19,6 @@ dbUser = "root"
 dbPassword = "woodycool123"
 dbName = "azure_support_tweets"
 
-
 engine = sqlalchemy.create_engine('mysql+pymysql://root:woodycool123@localhost:3306/azure_support_tweets')
 df = pd.read_sql_table("preprocessed_tweets", engine)
 data = pd.DataFrame(df)
@@ -55,8 +54,7 @@ labels = data.main_category
 
 
 # Display top features
-# N = 2
-# for label, main_category in sorted(category_to_id.items()):
+# N = 2 # for label, main_category in sorted(category_to_id.items()):
 #  features_chi2 = chi2(features, labels == main_category)
 #  indices = np.argsort(features_chi2[0])
 #  feature_names = np.array(tfidf.get_feature_names())[indices]
@@ -67,7 +65,7 @@ labels = data.main_category
 #  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
 
 
-X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 42, test_size=0.25)
+X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 0, test_size=0.25)
 count_vect = CountVectorizer()
 X_train_counts = count_vect.fit_transform(X_train)
 tfidf_transformer = TfidfTransformer()
@@ -76,4 +74,5 @@ clf = BernoulliNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
 print(accuracy_score(y_test, pred))
 # print(metrics.classification_report(pred, y_test))
-print(metrics.confusion_matrix(y_test, pred))
+# print(metrics.confusion_matrix(y_test, pred))
+# print(clf.predict(count_vect.transform(["@azuresupport - I hope you all had a tall frosty one once this was fixed.  Yesterday could not have been a good day."])))
