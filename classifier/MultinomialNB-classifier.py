@@ -1,5 +1,6 @@
 import sqlalchemy
 import pandas as pd
+import pickle
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
@@ -75,10 +76,13 @@ tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
 clf = MultinomialNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
-print(accuracy_score(pred, y_test))
+# print(accuracy_score(pred, y_test))
 # print(clf)
 # print(metrics.classification_report(pred, y_test))
-
 # Print the null accuracy
 # print(y_test.value_counts().head(1)/len(y_test))
-print(metrics.confusion_matrix(y_test, pred))
+# print(metrics.confusion_matrix(y_test, pred))
+
+# Save model with pickle
+with open('multinomialnb_model','wb') as f:
+    pickle.dump(clf, f)

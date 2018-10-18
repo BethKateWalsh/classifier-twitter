@@ -80,12 +80,15 @@ try:
             lang_user = tweet.user.lang
 
             # Make prediction
-            filename = 'bernoullinb_model.sav'
-            loaded_model = pickle.load(open(filename, 'rb'))
-            label = loaded_model.predict(count_vect.transform([text_tweet]))
-
-            print(label)
-            bernoullinb_label = label
+            with open('bernoullinb_model','rb') as f:
+                clf = pickle.load(f)
+            tweet = text_tweet
+            # Load training data
+            X_train = data['train']
+            y_train = data['target']
+            print("Tweet gotten...")
+            bernoullinb_label = clf.predict(tweet)
+            print("okay!")
 
             # Insert row
             addrowQuery = 'INSERT INTO predicted_tweets(id_tweet, text_tweet, created_at_status, truncated, retweet_count, favorite_count, retweeted, lang_status, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'

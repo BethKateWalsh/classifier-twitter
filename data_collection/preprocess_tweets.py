@@ -10,8 +10,9 @@ import contractions
 from spellchecker import SpellChecker
 
 # Word to not stem
+# remove_words = ['azure', 'azuresupport', 'hi', 'hello']
 not_stem_words = ['aws', 'amazon', 'dockerhub', 'googlechrome', 'tradelize', 'xbox', 'vsts', 'docker', 'lucidchart', 'facebook', 'bing', 'cloudflare', 'argo', 'safari', 'office365', 'twitter', 'mysql', 'github', 'nodejs', 'ping', 'arm', 'git', 'signalr']
-remove_words = ['azure', 'azuresupport', 'hi', 'hello']
+
 
 # Connect to MYSQL database
 dbServerName = "localhost"
@@ -72,18 +73,18 @@ try:
         #     tokenized_tweet = [word.replace(w, spell.correction(w)) for word in tokenized_tweet]
 
         # Remove the stopwords
-        filtered_words = [word for word in tokenized_tweet if word not in stopwords.words('english')]
-        tokenized_tweet = filtered_words
+        # filtered_words = [word for word in tokenized_tweet if word not in stopwords.words('english')]
+        # tokenized_tweet = filtered_words
 
         # Stemming (Stop it removing the from words!)
         stemmed_tweet_words = []
         for tweet in tokenized_tweet:
             if tweet in not_stem_words:
                 stemmed_tweet_words.append(tweet)
-            elif tweet in remove_words:
-                pass
             else:
                 stemmed_tweet_words.append(porter.stem(tweet))
+            # elif tweet in remove_words:
+            #     pass
 
         # Put string back together
         text_tweet = " ".join(stemmed_tweet_words)
