@@ -4,10 +4,16 @@ from twitter_api import ACCESS_TOKEN, ACCESS_SECRET, CONSUMER_KEY, CONSUMER_SECR
 import tweepy
 import datetime
 import pymysql.cursors
+import pandas as pd
 import re
 import pickle
-from sklearn.naive_bayes import BernoulliNB
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import numpy as np
+from io import StringIO
 
 # Create CountVectorizer
 count_vect = CountVectorizer()
@@ -16,6 +22,21 @@ count_vect = CountVectorizer()
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth)
+
+# Read training set
+df = pd.read_csv("/Users/bethwalsh/Documents/classifier-twitter/training_data.csv")
+data = pd.DataFrame(df)
+# Get modal
+clfBer = pickle.load(open('bernoullinb_model','rb'))
+clfMulti = pickle.load(open('multinomialnb_model','rb'))
+# Prepare trainign data for fitting
+X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['main_category'], random_state = 0, test_size=0.25)
+count_vect = CountVectorizer()
+tfidf_transformer = TfidfTransformer()
+X_train_counts = count_vect.fit_transform(X_train)
+X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
+clfBer = clfBer.fit(X_train_tfidf, y_train)
+clfMulti = clfMulti.fit(X_train_tfidf, y_train)
 
 # Connect to MYSQL database
 dbServerName = "localhost"
@@ -30,6 +51,12 @@ searchQuery = "@azuresupport"
 searched_tweets = []
 last_id = -1
 max_tweets = 1000
+
+labels_data = {'01':'praise','012':'promise','015':'dispraise','12':'helpfulness','13':'feature information','24':'shortcoming','25':'bug report','26':'feature request','211':'content request','214':'improvement request','37':'other app','38':'recommendation','310':'dissuasion','313':'question','316':'other feedback','317':'howto','49':'noise'}
+def switch_demo(argument):
+    if argument == 1:
+        argument = "0" + str(argument);
+    return labels_data[str(argument)]
 
 while len(searched_tweets) < max_tweets:
     count = max_tweets - len(searched_tweets)
@@ -49,7 +76,7 @@ try:
     cursorObject = connectionObject.cursor()
 
     # Create new table for processed tweets IF DOSE NOT ALREADY EXSIST
-    sqlQuery = "CREATE TABLE IF NOT EXISTS predicted_tweets(id_tweet varchar(200), text_tweet text, created_at_status varchar(20), truncated tinyint, retweet_count int, favorite_count int, retweeted tinyint, lang_status varchar(32), id_user varchar(32), id_str_user varchar(32), name_user text, screen_name_user varchar(32), location_user text, description_user text, url_user varchar(100), followers_count_user int, favourites_count_user int, lang_user varchar(32), bernoullinb_label varchar(100), multinomialnb_label varchar(100))"
+    sqlQuery = "CREATE TABLE IF NOT EXISTS predicted_tweets(id_tweet varchar(200), text_tweet text, created_at_status varchar(20), truncated tinyint, id_user varchar(32), id_str_user varchar(32), name_user text, screen_name_user varchar(32), location_user text, description_user text, url_user varchar(100), followers_count_user int, favourites_count_user int, lang_user varchar(32), bernoullinb_label varchar(32), multinomialnb_label varchar(32))"
 
     # Execute the sqlQuery
     cursorObject.execute(sqlQuery)
@@ -80,19 +107,16 @@ try:
             lang_user = tweet.user.lang
 
             # Make prediction
-            with open('bernoullinb_model','rb') as f:
-                clf = pickle.load(f)
             tweet = text_tweet
-            # Load training data
-            X_train = data['train']
-            y_train = data['target']
-            print("Tweet gotten...")
-            bernoullinb_label = clf.predict(tweet)
-            print("okay!")
+            bernoullinb_label = clfBer.predict(count_vect.transform([tweet]))[0]
+            print(bernoullinb_label, switch_demo(bernoullinb_label))
+            bernoullinb_label = switch_demo(bernoullinb_label)
 
-            # Insert row
-            addrowQuery = 'INSERT INTO predicted_tweets(id_tweet, text_tweet, created_at_status, truncated, retweet_count, favorite_count, retweeted, lang_status, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
-            cursorObject.execute(addrowQuery, (id_tweet, text_tweet, created_at_status, truncated, retweet_count, favorite_count, retweeted, lang_status, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label))
+            multinomialnb_label = clfMulti.predict(count_vect.transform([tweet]))[0]
+            multinomialnb_label = switch_demo(multinomialnb_label)
+
+            Addrowquery = 'INSERT INTO predicted_tweets(id_tweet, text_tweet, created_at_status, truncated, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label, multinomialnb_label) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
+            cursorObject.execute(Addrowquery, (id_tweet, text_tweet, created_at_status, truncated, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label, multinomialnb_label))
             # commit
             connectionObject.commit()
 
