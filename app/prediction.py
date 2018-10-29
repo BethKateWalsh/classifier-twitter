@@ -15,6 +15,9 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 from io import StringIO
 
+username = "amazonhelp"
+new_db_name = username + "_predicted_tweets"
+
 # Create CountVectorizer
 count_vect = CountVectorizer()
 
@@ -27,7 +30,6 @@ api = tweepy.API(auth)
 df = pd.read_csv("/Users/bethwalsh/Documents/classifier-twitter/training_data.csv")
 data = pd.DataFrame(df)
 # Get modal
-clfBer = pickle.load(open('bernoullinb_model','rb'))
 clfMulti = pickle.load(open('multinomialnb_model','rb'))
 # Prepare trainign data for fitting
 X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['main_category'], random_state = 0, test_size=0.25)
@@ -35,7 +37,6 @@ count_vect = CountVectorizer()
 tfidf_transformer = TfidfTransformer()
 X_train_counts = count_vect.fit_transform(X_train)
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
-clfBer = clfBer.fit(X_train_tfidf, y_train)
 clfMulti = clfMulti.fit(X_train_tfidf, y_train)
 
 # Connect to MYSQL database
@@ -47,7 +48,7 @@ cusrorType = pymysql.cursors.DictCursor
 connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPassword, db=dbName, charset='utf8mb4', cursorclass=cusrorType)
 
 # Get 1000 tweets paarmeters
-searchQuery = "@azuresupport"
+searchQuery = "@" + username
 searched_tweets = []
 last_id = -1
 max_tweets = 1000
@@ -70,21 +71,16 @@ while len(searched_tweets) < max_tweets:
         # depending on TweepError.code, one may want to retry or wait
         # to keep things simple, we will give up on an error
         break
-
 try:
     # Create a cursor object
     cursorObject = connectionObject.cursor()
-
-    # Create new table for processed tweets IF DOSE NOT ALREADY EXSIST
-    sqlQuery = "CREATE TABLE IF NOT EXISTS predicted_tweets(id_tweet varchar(200), text_tweet text, created_at_status varchar(20), truncated tinyint, id_user varchar(32), id_str_user varchar(32), name_user text, screen_name_user varchar(32), location_user text, description_user text, url_user varchar(100), followers_count_user int, favourites_count_user int, lang_user varchar(32), bernoullinb_label varchar(32), multinomialnb_label varchar(32))"
-
-    # Execute the sqlQuery
+    sqlQuery = "CREATE TABLE IF NOT EXISTS " + new_db_name +"(id_tweet varchar(200) PRIMARY KEY, text_tweet text, created_at_status varchar(20), truncated tinyint, id_user varchar(32), id_str_user varchar(32), name_user text, screen_name_user varchar(32), location_user text, description_user text, url_user varchar(100), followers_count_user int, favourites_count_user int, lang_user varchar(32), multinomialnb_label varchar(32))"
     cursorObject.execute(sqlQuery)
 
     # Add a row for each tweet
     # Add to filter by last date downloaded "and tweet.created_at > lastDate"
     for tweet in searched_tweets:
-        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en" and ('RT @' not in tweet.full_text)):
+        if (tweet.user.screen_name != username and tweet.retweeted == False and tweet.lang == "en" and ('RT @' not in tweet.full_text)):
             # Assign values to variables
             id_tweet = tweet.id
             text_tweet = tweet.full_text
@@ -108,14 +104,11 @@ try:
 
             # Make prediction
             tweet = text_tweet
-            bernoullinb_label = clfBer.predict(count_vect.transform([tweet]))[0]
-            bernoullinb_label = switch_demo(bernoullinb_label)
-
             multinomialnb_label = clfMulti.predict(count_vect.transform([tweet]))[0]
             multinomialnb_label = switch_demo(multinomialnb_label)
 
-            Addrowquery = 'INSERT INTO predicted_tweets(id_tweet, text_tweet, created_at_status, truncated, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label, multinomialnb_label) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
-            cursorObject.execute(Addrowquery, (id_tweet, text_tweet, created_at_status, truncated, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, bernoullinb_label, multinomialnb_label))
+            Addrowquery = 'INSERT IGNORE INTO ' + new_db_name +'(id_tweet, text_tweet, created_at_status, truncated, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, multinomialnb_label) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
+            cursorObject.execute(Addrowquery, (id_tweet, text_tweet, created_at_status, truncated, id_user, id_str_user, name_user, screen_name_user, location_user, description_user, url_user, followers_count_user, favourites_count_user, lang_user, multinomialnb_label))
             # commit
             connectionObject.commit()
 

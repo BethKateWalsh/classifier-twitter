@@ -73,8 +73,8 @@ try:
         #     tokenized_tweet = [word.replace(w, spell.correction(w)) for word in tokenized_tweet]
 
         # Remove the stopwords
-        # filtered_words = [word for word in tokenized_tweet if word not in stopwords.words('english')]
-        # tokenized_tweet = filtered_words
+        filtered_words = [word for word in tokenized_tweet if word not in stopwords.words('english')]
+        tokenized_tweet = filtered_words
 
         # Stemming (Stop it removing the from words!)
         stemmed_tweet_words = []

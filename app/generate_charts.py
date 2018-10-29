@@ -1,8 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt, mpld3
-import matplotlib.dates as mdates
-import matplotlib.dates as dates
 import pymysql.cursors
 import sqlalchemy
 import datetime
@@ -10,17 +7,22 @@ import sys
 import re
 from wordcloud import WordCloud, STOPWORDS
 import preprocessor as p
-import contractions
+import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
-import collections
-import nltk
 from nltk.collocations import *
 from nltk.stem import WordNetLemmatizer
+import matplotlib.pyplot as plt, mpld3
+import matplotlib.dates as mdates
+import matplotlib.dates as dates
+import collections
+import contractions
 from matplotlib import rcParams
-from fpdf import FPDF
 
 rcParams.update({'figure.autolayout': True})
+
+username = "amazonhelp"
+new_db_name = username + "_predicted_tweets"
 
 # Get tweets from MYSQL database
 dbServerName = "localhost"
@@ -29,7 +31,7 @@ dbPassword = "woodycool123"
 dbName = "azure_support_tweets"
 
 engine = sqlalchemy.create_engine('mysql+pymysql://root:woodycool123@localhost:3306/azure_support_tweets')
-df = pd.read_sql_table("predicted_tweets", engine)
+df = pd.read_sql_table(new_db_name, engine)
 data = pd.DataFrame(df)
 
 multinomialnb_count = data['multinomialnb_label'].value_counts()
@@ -38,7 +40,7 @@ my_plot.set_xlabel("Category")
 my_plot.set_ylabel("Frequency")
 
 fig = my_plot.get_figure()
-fig.savefig('images/frequency_categories.png')
+fig.savefig('/Users/bethwalsh/Documents/classifier-twitter/app/images/frequency_categories.png')
 
 # No floats
 pd.options.display.float_format = '{:,.0f}'.format
@@ -66,10 +68,13 @@ merged_multinomial = merged_multinomial.join(other_feedback, rsuffix='other_feed
 merged_multinomial = merged_multinomial.fillna(0)
 
 merged_multinomial.plot(x_compat=True, legend=None)
-plt.gca().xaxis.set_major_locator(dates.DayLocator())
+locator = dates.DayLocator(
+locator.MAXTICKS = 1000
+plt.gca().xaxis.set_major_locator(locator)
+#plt.gca().xaxis.set_major_locator(dates.DayLocator())
 plt.gca().xaxis.set_major_formatter(dates.DateFormatter('%d\n\n%a'))
-plt.gcf().autofmt_xdate(rotation=0, ha="center")
-plt.savefig('images/frequency_categories_day.png')
+plt.gcf().autofmt_xdate(rotation=90, ha="left")
+plt.savefig('/Users/bethwalsh/Documents/classifier-twitter/app/images/frequency_categories_day.png')
 
 # Python word cloud
 # Get all bug report tweets
@@ -124,9 +129,7 @@ wordcloud = WordCloud(max_words=200, height=2000, width=4000, background_color="
 wordcloud.generate_from_frequencies(word_dict)
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
-plt.savefig('images/bug_report_wordcloud.png')
-
-
+plt.savefig('/Users/bethwalsh/Documents/classifier-twitter/app/images/bug_report_wordcloud.png')
 
 # Python word cloud
 # Get all bug report tweets
@@ -180,24 +183,6 @@ wordcloud = WordCloud(max_words=200, height=2000, width=4000, background_color="
 wordcloud.generate_from_frequencies(word_dict)
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
-plt.savefig('images/question_wordcloud.png')
+plt.savefig('/Users/bethwalsh/Documents/classifier-twitter/app/images/question_wordcloud.png')
 
 daterange = "Date Range: " + (frequency_over_time.iloc[-1]['date']).strftime("%B %d, %Y") + " - " + (frequency_over_time.iloc[0]['date']).strftime("%B %d, %Y")
-account = "Twitter Account: " + "@azuresupport"
-
-pdf = FPDF()
-pdf.add_page()
-pdf.set_title("Predicted Tweet Analysis Report")
-pdf.set_font("Arial", size=12)
-pdf.cell(200, 20, txt="Predicted Tweet Analysis Report", ln=1, align="C")
-pdf.cell(200, 10, txt=account, ln=1, align="L")
-pdf.cell(200, 10, txt=daterange, ln=1, align="L")
-pdf.cell(200, 10, txt="Frequency of Categories", ln=1, align="L")
-pdf.image('images/frequency_categories.png', x = None, y = None, w = 120, h = 0, type = 'PNG', link = '')
-pdf.cell(200, 10, txt="Frequency of Categories by Day", ln=1, align="L")
-pdf.image('images/frequency_categories_day.png', x = None, y = None, w = 120, h = 0, type = 'PNG', link = '')
-pdf.cell(200, 10, txt="Bug Report - WordCloud", ln=1, align="L")
-pdf.image('images/bug_report_wordcloud.png', x = None, y = None, w = 120, h = 0, type = 'PNG', link = '')
-pdf.cell(200, 10, txt="Question - WordCloud", ln=1, align="L")
-pdf.image('images/question_wordcloud.png', x = None, y = None, w = 120, h = 0, type = 'PNG', link = '')
-pdf.output("images/report.pdf")
