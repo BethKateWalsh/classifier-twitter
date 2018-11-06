@@ -15,5 +15,5 @@ def start_script(username):
     print("Charts created!")
 
     # Make report
-    make_report(username, daterange)
-    print("Report done!")
+    filename = make_report(username, daterange)
+    return filename

@@ -1,29 +1,22 @@
 from flask import Flask, render_template, request, url_for, flash
-from create_report import start_script
+import create_report
+from flask_debugtoolbar import DebugToolbarExtension
+from flask import send_from_directory
 
 app = Flask(__name__)
+filename = ""
 
-@app.route('/', methods=["GET","POST"])
-def home():
-    error = None
-    try:
-        if request.method == "POST":
-            console.log("Started...")
-            attempted_account = request.form['account']
+@app.route("/")
+def index():
+    return render_template("index.html")
 
-            if attempted_account != "":
-                console.log("Not equal to 0")
-                start_script(attempted_account)
-
-            else:
-                console.log("Equal to 0")
-                return render_template('home.html', error = error)
-
-        return render_template('home.html')
-
-    except Exception as e:
-        return render_template('home.html', error = error)
-
+@app.route("/handle_data", methods=['GET', 'POST'])
+def handle_data():
+    text = request.form['accountinput']
+    preprocessed_text = text.lower()
+    filename = create_report.start_script(preprocessed_text)
+    path = "reports/" + filename
+    return send_from_directory(directory='.', filename=path)
 
 if __name__ == '__main__':
     app.run(debug=True)

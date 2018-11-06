@@ -6,6 +6,10 @@ h1 {
   margin-top: 15px;
 }
 
+#exampleFormControlSelect1 {
+  border-radius: 1px;
+}
+
 .row {
   margin-bottom: 30px;
 }

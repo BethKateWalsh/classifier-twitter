@@ -94,7 +94,7 @@ def make_charts(username):
     bag_of_words = re.sub(r'([^\s\w]|_)+', ' ', bag_of_words)
     bag_of_words = word_tokenize(bag_of_words)
     bag_of_words = [word for word in bag_of_words if word not in stopwords.words('english')]
-    stopwords_others = ['azure', 'thanks', 'hi', 'hello', 'please', 'help']
+    stopwords_others = ['azure', 'thanks', 'hi', 'hello', 'please', 'help', 'let_u', 'want_use']
     bag_of_words = [word for word in bag_of_words if word not in stopwords_others]
 
     # Lemmatize words
@@ -183,5 +183,5 @@ def make_charts(username):
     plt.axis("off")
     plt.savefig('/Users/bethwalsh/Documents/classifier-twitter/app/images/question_wordcloud.png')
 
-    daterange = "Date Range: " + (frequency_over_time.iloc[-1]['date']).strftime("%B %d, %Y") + " - " + (frequency_over_time.iloc[0]['date']).strftime("%B %d, %Y")
+    daterange = "Date Range: " + (frequency_over_time.iloc[0]['date']).strftime("%B %d, %Y") + " - " + (frequency_over_time.iloc[-1]['date']).strftime("%B %d, %Y")
     return daterange

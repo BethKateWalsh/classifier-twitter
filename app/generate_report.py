@@ -24,4 +24,6 @@ def make_report(username, daterange):
 
     # Export and save report
     now = str(datetime.datetime.now())
-    pdf.output("/Users/bethwalsh/Documents/classifier-twitter/app/reports/" + now + ".pdf")
+    pdf.output("reports/" + username + "_report_" + now + ".pdf")
+    filename  = username + "_report_" + now + ".pdf"
+    return filename

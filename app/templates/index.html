@@ -29,17 +29,29 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <form action="" method="post">
+          <form method="post" action="{{ url_for('handle_data') }}">
             <div class="form-group">
               <h1>Get report of your users needs...</h1>
               <br>
-              <label for="validationServerUsername">Enter a Twitter Account</label>
+              <label for="validationServerUsername">Select a Twitter Support Account</label>
                 <label class="sr-only" for="inlineFormInputGroup">AzureSupport</label>
                 <div class="input-group mb-2">
                   <div class="input-group-prepend">
                     <div class="input-group-text">@</div>
                   </div>
-                  <input type="text" class="form-control" id="validationServerUsername" name="account" value="{{request.form.account}}" required>
+                  <select type="text" class="form-control" id="exampleFormControlSelect1" list="support_handles" name="accountinput" required>
+                    <option>AdobeCare</option>
+                    <option>AzureSupport</option>
+                    <option>classpass</option>
+                    <option>dominos</option>
+                    <option>glossier</option>
+                    <option>Hootsuite_Help</option>
+                    <option>HubSpotSupport</option>
+                    <option>JetBlue</option>
+                    <option>tacobell</option>
+                    <option>XboxSupport</option>
+                    <option>Zappos</option>
+                  </select>
                   <div class="invalid-feedback">
                     Please enter an account name.
                   </div>
@@ -47,7 +59,7 @@
                 <p>{{error}}</p>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary" href="/scripts/create_report.py">Download Report</button>
+            <button type="submit" class="btn btn-primary btn-lg" target="_blank" name="Submit_button" href="/scripts/create_report.py">Download Report</button>
           </form>
         </div>
       </div>

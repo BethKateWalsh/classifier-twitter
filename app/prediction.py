@@ -30,10 +30,10 @@ def make_prediction(username):
     api = tweepy.API(auth)
 
     # Read training set
-    df = pd.read_csv("/Users/bethwalsh/Documents/classifier-twitter/training_data.csv")
+    df = pd.read_csv("model/training_data.csv")
     data = pd.DataFrame(df)
     # Get modal
-    clfMulti = pickle.load(open('multinomialnb_model','rb'))
+    clfMulti = pickle.load(open('model/multinomialnb_model','rb'))
     # Prepare trainign data for fitting
     X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['main_category'], random_state = 0, test_size=0.25)
     count_vect = CountVectorizer()
