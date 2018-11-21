@@ -29,7 +29,7 @@ max_tweets = 1000
 while len(searched_tweets) < max_tweets:
     count = max_tweets - len(searched_tweets)
     try:
-        new_tweets = api.search(q=searchQuery, tweet_mode='extended', count=1000, max_id=str(last_id - 1))
+        new_tweets = api.search(q=searchQuery, tweet_mode='extended', max_id=str(last_id - 1), lang='en')
         if not new_tweets:
             break
         searched_tweets.extend(new_tweets)
@@ -53,7 +53,7 @@ try:
     # Add a row for each tweet
     # Add to filter by last date downloaded "and tweet.created_at > lastDate"
     for tweet in searched_tweets:
-        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and tweet.lang == "en" and ('RT @' not in tweet.full_text) and tweet.created_at > lastDate):
+        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and ('RT @' not in tweet.full_text) and tweet.created_at > lastDate):
             # Assign values to variables
             id_tweet = tweet.id
             text_tweet = tweet.full_text

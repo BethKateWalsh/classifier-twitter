@@ -64,14 +64,6 @@ try:
         # Tokenize
         tokenized_tweet = word_tokenize(text_tweet)
 
-        # Correct Spelling
-        # spell = SpellChecker()
-        # misspelled = []
-        # misspelled = spell.unknown(tokenized_tweet)
-        # for w in misspelled:
-        #     # Replace with correction
-        #     tokenized_tweet = [word.replace(w, spell.correction(w)) for word in tokenized_tweet]
-
         # Remove the stopwords
         filtered_words = [word for word in tokenized_tweet if word not in stopwords.words('english')]
         tokenized_tweet = filtered_words
