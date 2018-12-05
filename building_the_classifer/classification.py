@@ -1,4 +1,5 @@
 import nltk
+from nltk.metrics import edit_distance
 import numpy as np
 import random
 import pymysql
@@ -9,7 +10,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 corpus = []
 labels = []
 
-
 # Get tweets from MYSQL database
 dbServerName = "localhost"
 dbUser = "root"
@@ -18,11 +18,10 @@ dbName = "azure_support_tweets"
 cusrorType = pymysql.cursors.DictCursor
 connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPassword, db=dbName, charset='utf8mb4', cursorclass=cusrorType)
 
-
 try:
     cursorObject = connectionObject.cursor()
     cursorObject.execute("SELECT text_tweet, main_category FROM preprocessed_tweets")
-    for i in cursorObject.fetchall()[:2000]:
+    for i in cursorObject.fetchall()[:2500]:
 
         # Create a numpy array
         sub_corpus = np.array((i["text_tweet"]), (i["main_category"]))
@@ -33,7 +32,6 @@ except Exception as e:
 
 finally:
     connectionObject.close()
-
 
 # Split Training and Test Data. First 1500 are labelled
 word_vectorizer = CountVectorizer(analyzer='word')

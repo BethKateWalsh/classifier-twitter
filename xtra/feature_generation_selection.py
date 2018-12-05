@@ -1,30 +1,41 @@
+# Database Libraries
 import sqlalchemy
+# Dataframe Library
 import pandas as pd
-import pickle
-import matplotlib.pyplot as plt
+# Sklearn Libraries
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_selection import chi2
 from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score
+from sklearn import metrics
 import numpy as np
 from io import StringIO
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 from sklearn import metrics
+# Visualisation Library
+import matplotlib.pyplot as plt
+# Save modal with Pickle
+import pickle
 
-
-# Get tweets from MYSQL database
+### Connect to MYSQL database
+##
+#
 dbServerName = "localhost"
 dbUser = "root"
 dbPassword = "woodycool123"
 dbName = "azure_support_tweets"
 
-
 engine = sqlalchemy.create_engine('mysql+pymysql://root:woodycool123@localhost:3306/azure_support_tweets')
 df = pd.read_sql_table("preprocessed_tweets", engine)
 data = pd.DataFrame(df)
 
+### Class labels...
+##
+#
 labels_data = {'01':'praise','012':'promise','015':'dispraise','12':'helpfulness','13':'feature information','24':'shortcoming','25':'bug report','26':'feature request','211':'content request','214':'improvement request','37':'other app','38':'recommendation','310':'dissuasion','313':'question','316':'other feedback','317':'howto','49':'noise'}
 list_of_labels = []
 # Add the key it matches in the dictionary
@@ -44,10 +55,15 @@ category_to_id = dict(category_id_df.values)
 id_to_category = dict(category_id_df[['main_category', 'label']].values)
 
 
-# Display numbers of each category
-# fig = plt.figure(figsize=(8,6))
-# data.groupby('label').text_tweet.count().plot.bar()
-# plt.show()
+### Bar chart of each category
+##
+#
+##fig = plt.figure(figsize=(8,6))
+##data2 = data.groupby('label').text_tweet.count().plot.bar()
+##data2.sort_values('label',ascending=True)
+##data2.plot.bar()
+##fig.subplots_adjust(bottom=0.3)
+##plt.show()
 
 
 # Text in Numerical Features :)
@@ -66,19 +82,31 @@ labels = data.main_category
 #  bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
 #  print("# '{}':".format(label))
 #  print("  . Most correlated unigrams:\n. {}".format('\n. '.join(unigrams[-N:])))
-#  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
+##  print("  . Most correlated bigrams:\n. {}".format('\n. '.join(bigrams[-N:])))
 
 
+### Training and Test Data Split
+##
+#
 X_train, X_test, y_train, y_test = train_test_split(data['text_tweet'], data['label'], random_state = 42, test_size=0.25)
+print(X_train.shape)
+print(X_train)
+
+
 count_vect = CountVectorizer()
 X_train_counts = count_vect.fit_transform(X_train)
+print(X_train_counts.shape)
+print(X_train_counts)
 tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(X_train_counts)
+print(X_train_tfidf.shape)
+print(X_train_tfidf)
+
 clf = MultinomialNB().fit(X_train_tfidf, y_train)
 pred = clf.predict(count_vect.transform(X_test))
-# print(accuracy_score(pred, y_test))
-# print(clf)
-# print(metrics.classification_report(pred, y_test))
+print(accuracy_score(pred, y_test))
+print(clf)
+print(metrics.classification_report(pred, y_test))
 # Print the null accuracy
 # print(y_test.value_counts().head(1)/len(y_test))
 # print(metrics.confusion_matrix(y_test, pred))

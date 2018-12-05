@@ -5,14 +5,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.tokenize import sent_tokenize, word_tokenize
 import preprocessor as p
-import re
 import contractions
-from spellchecker import SpellChecker
 
 # Word to not stem
 # remove_words = ['azure', 'azuresupport', 'hi', 'hello']
 not_stem_words = ['aws', 'amazon', 'dockerhub', 'googlechrome', 'tradelize', 'xbox', 'vsts', 'docker', 'lucidchart', 'facebook', 'bing', 'cloudflare', 'argo', 'safari', 'office365', 'twitter', 'mysql', 'github', 'nodejs', 'ping', 'arm', 'git', 'signalr']
-
 
 # Connect to MYSQL database
 dbServerName = "localhost"
@@ -26,8 +23,6 @@ connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPa
 # NLTK objects created
 porter = PorterStemmer()
 wnl = WordNetLemmatizer()
-
-misspelled = []
 
 # Get tweets from raw_tweets and process
 try:
@@ -59,7 +54,7 @@ try:
 
         # Remove hashtags but keep the words and special characters
         text_tweet = text_tweet.replace("#", "")
-        text_tweet = re.sub(r'([^\s\w]|_)+', ' ', text_tweet)
+        text_tweet = re.sub(r'[^a-zA-Z]+', ' ', text_tweet)
 
         # Tokenize
         tokenized_tweet = word_tokenize(text_tweet)
@@ -75,8 +70,6 @@ try:
                 stemmed_tweet_words.append(tweet)
             else:
                 stemmed_tweet_words.append(porter.stem(tweet))
-            # elif tweet in remove_words:
-            #     pass
 
         # Put string back together
         text_tweet = " ".join(stemmed_tweet_words)
