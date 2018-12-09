@@ -4,9 +4,6 @@ import tweepy
 import datetime
 import pymysql.cursors
 
-# Only get tweets from this data on
-lastDate = datetime.datetime(2018, 10, 12, 16, 13, 41)
-
 # Connect to Twitter API
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
@@ -51,9 +48,8 @@ try:
     cursorObject.execute(sqlQuery)
 
     # Add a row for each tweet
-    # Add to filter by last date downloaded "and tweet.created_at > lastDate"
     for tweet in searched_tweets:
-        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and ('RT @' not in tweet.full_text) and tweet.created_at > lastDate):
+        if (tweet.user.screen_name != "azuresupport" and tweet.retweeted == False and ('RT @' not in tweet.full_text)):
             # Assign values to variables
             id_tweet = tweet.id
             text_tweet = tweet.full_text

@@ -19,7 +19,6 @@ dbName = "azure_support_tweets"
 cusrorType = pymysql.cursors.DictCursor
 connectionObject = pymysql.connect(host=dbServerName, user=dbUser, password=dbPassword, db=dbName, charset='utf8mb4', cursorclass=cusrorType)
 
-
 # NLTK objects created
 porter = PorterStemmer()
 wnl = WordNetLemmatizer()
